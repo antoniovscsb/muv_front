@@ -1,4 +1,4 @@
-Joaquim - login/ cadastro/ perfil 
-Edilson - publicar anúncio/ trocas/ doações 
+Joaquim - login/ cadastro/ perfil/ doações
+Edilson - publicar anúncio/ trocas/  
 Valmir - chat/ quem somos 
 Antonio - permutas/ ponto de encontro/ início
