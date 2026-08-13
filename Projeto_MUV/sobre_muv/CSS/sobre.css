@@ -70,7 +70,7 @@ body {
 }
 
 .header_icones i {
-    color: var(--cor-laranja);
+    color: var(--cor-branco);
     font-size: 28px;
 
     cursor: pointer;
@@ -81,7 +81,7 @@ body {
 }
 
 .header_icones i:hover {
-    color: var(--cor-branco);
+    color:var(--cor-laranja);
     transform: translateY(-3px);
 }
 
@@ -346,6 +346,11 @@ body {
     max-width: 1100px;
 
     margin: 40px auto 0;
+}
+
+.cards i{
+    font-size: 20px;
+    color: var(--cor-laranja);
 }
 
 .card {
