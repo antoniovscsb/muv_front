@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cor-fundo: #f6f7fb;
+    --cor-texto: #333333;
+    --cor-principal: #4010B6;
+    --cor-principal-hover: #320d91;
+    --cor-secundaria-1: #F59E0B;
+    --cor-borda: #dcdcdc;
+    --raio-borda: 16px;
+    --transicao: 0.3s ease;
+    --sombra-card: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    --sombra-botao: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-principal);
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 30%;
+    display: block;
+}
+
+.icones {
+    display: flex;
+    gap: 20px;
+    color: var(--cor-secundaria-1);
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+/* Conteúdo Principal */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex: 1;
+    margin: 40px 8%;
+}
+
+/* Artigo / Apresentação */
+.artigo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.artigo img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.artigo h4 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #4b4b4b;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.artigo p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Caixa de Login */
+.login {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-card);
+}
+
+.login-google-facebook {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.botao-google, 
+.botao-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    box-shadow: var(--sombra-botao);
+    border: 1px solid var(--cor-borda);
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 50%;
+    transition: var(--transicao);
+}
+
+.botao-google {
+    background: #ffffff;
+    color: #333;
+}
+
+.botao-google:hover {
+    background: #f8f8f8;
+}
+
+.botao-facebook {
+    background: #1877f2;
+    color: white;
+    border: none;
+}
+
+.botao-facebook:hover {
+    background: #1465d3;
+}
+
+.botao-google img, 
+.botao-facebook img {
+    width: 20px;
+    height: 20px;
+}
+
+.ouconectecom {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.input-email {
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: var(--transicao);
+}
+
+.input-email:focus {
+    outline: none;
+    border-color: var(--cor-principal);
+    background: #fff;
+}
+
+.botao-email {
+    background: var(--cor-principal);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transicao);
+    margin-bottom: 20px;
+}
+
+.botao-email:hover {
+    background: var(--cor-principal-hover);
+}
+
+.naotemconta {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.naotemconta a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.naotemconta a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+
+    .logo img{
+
+        width: 200px;
+
+
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px 4%;
+        gap: 30px;
+    }
+
+    .artigo {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .artigo h4 {
+        font-size: 1.4rem;
+    }
+
+    .login {
+        max-width: 100%;
+    }
+}

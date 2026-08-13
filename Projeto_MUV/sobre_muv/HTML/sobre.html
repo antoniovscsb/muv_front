@@ -1,116 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troque Aqui!</title>
-    <link rel="stylesheet" href="/Projeto_escambo/CSS/sobre.css"></link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta  name="description"  content="Troque Aqui! - Plataforma para trocar, doar e compartilhar conhecimento.">
+
+    <title>MUV</title>
+
+    <link
+        rel="stylesheet"
+        href="/Projeto_MUV/sobre_muv/CSS/sobre.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
 </head>
 
 <body>
 
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
     <header class="header">
 
-      <div class="header_logo">
-       
-         <img src="/Projeto_escambo/img/logo_br.png" alt="Foto">
-         
-      </div>   
-      <div class="header_icones">
+        <a
+            href="#"
+            class="header_logo"
+            aria-label="Página inicial Troque Aqui!"
+        >
+            <img
+                src="/Projeto_MUV/sobre_muv/img/logo_br.png"
+                alt="Logo Troque Aqui!"
+            >
+        </a>
 
-         <i class="fa-regular fa-circle-user"></i>
-         <i class="fa-brands fa-rocketchat"></i>
-         <i class="fa-regular fa-bell"></i>
+        <div class="header_icones">
 
-         <!-- <img src="/Projeto_escambo/img/Vector.png" alt="Foto">
-         <img src="/Projeto_escambo/img/Vector-1.png" alt="Foto">
-         <img src="/Projeto_escambo/img/Vector-2.png" alt="Foto"> -->
+            <a href="#" aria-label="Meu perfil">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
 
-      </div>
-      
+            <a href="#" aria-label="Mensagens">
+                <i class="fa-brands fa-rocketchat"></i>
+            </a>
+
+            <a href="#" aria-label="Notificações">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+
+        </div>
+
     </header>
 
-    </div>
-        
-         <nav class="menu">
 
-          <div></div>
-           
-            <section class="menu_link">
+    <!-- =========================
+         MENU
+    ========================== -->
 
-               <i class="fa-solid fa-home"></i> Inicio</a>
+    <nav class="menu" aria-label="Menu principal">
+      <div></div>
+         <div></div>
+         <div></div>
+        <div class="menu_links">
 
-               <i class="fa-solid fa-layer-group"></i> Categoria</a>
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </a>
 
-               <i class="fa-solid fa-mountain-city"></i> Meus Anuncios</a>
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Categorias</span>
+            </a>
 
-               <i class="fa-solid fa-recycle"></i> Trocas</a>
+            <a href="#">
+                <i class="fa-solid fa-mountain-city"></i>
+                <span>Anúncios</span>
+            </a>
 
-               <i class="fa-solid fa-hand-holding-heart"></i></i> Doações</a>
+            <a href="#">
+                <i class="fa-solid fa-recycle"></i>
+                <span>Trocas</span>
+            </a>
 
-            </section>
-           
-            <section class="btn_Pub_Anucio"> 
-               
-               <span>Publicar Anuncio</span>
-            
-            </section>
-           
-      
-         </nav>
+            <a href="#">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <span>Doações</span>
+            </a>
 
-           <section class="menu_busca">
-               <input type="text" name="busca" id="busca_site" placeholder="Digite nome produto."> 
-            </section>
+             <a href="#">
+                <i class="fa-solid fa-question"></i>
+                <span>Ajuda</span>
+            </a>
+        </div>
 
-    <section class="banner">
+        <a
+            href="#"
+            class="btn_Pub_Anucio"
+        >
+            + Publicar Anúncio
+        </a>
 
-       <img src="/Projeto_escambo/img/fundo.png" alt="Foto" width="100%">
+    </nav>
 
-       <span class="banner-nome"> Troque Aqui!</span>
 
-       <p class="banner_relato"><span>O Troque Aqui!</span><br> Foi criado quando amigos resolveram<br>
-         ajudar pessoas a TROCAR, DOAR E FORNECER CONHECIMENTO<br> de modo sustentável, 
-         em uma ação de benefícios multos em uma comunidade. 
-          
-       </p>
+    <!-- =========================
+         BUSCA
+    ========================== -->
 
-      <div class="cards">
+    <section
+        class="menu_busca"
+        aria-label="Pesquisa"
+    >
 
-         <article class="card">
-            <span class="card-tag">Nosso diferencial</span>
-            <p>texto quem somos</p>
-   
-            </article>
-
-         <article class="card">
-            <span class="card-tag">Nossas qualidades</span>
-            <p>texto política</p>
-   
-         </article>
-
-         <article class="card">
-            <span class="card-tag">pra vc</span>
-            <p>texto licença</p>
-   
-         </article>
-      </div>
+        <input
+            type="search"
+            name="busca"
+            id="busca_site"
+            placeholder="Digite o nome do produto..."
+            aria-label="Digite o nome do produto"
+        >
 
     </section>
 
 
+    <!-- =========================
+         BANNER / SOBRE
+    ========================== -->
+
+    <main>
+
+        <section class="banner">
+
+            <img
+                src="/Projeto_MUV/sobre_muv/img/fundo.png"
+                alt=""
+            >
+
+            <div class="banner-conteudo">
+
+                <span class="banner-nome">
+                    Troque Aqui!
+                </span>
+
+                <p class="banner_relato">
+
+                    <strong>O Troque Aqui!</strong>
+                    foi criado quando amigos resolveram
+                    ajudar pessoas a
+
+                    <strong>
+                        trocar, doar e compartilhar conhecimento
+                    </strong>
+
+                    de modo sustentável, promovendo uma
+                    ação de benefícios mútuos dentro da
+                    comunidade.
+
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 CARDS
+            ========================== -->
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <span class="card-tag">
+                        Nosso diferencial
+                    </span>
+
+                    <p>
+                        Conectamos pessoas para facilitar
+                        trocas e doações de produtos,
+                        incentivando o consumo consciente
+                        e sustentável.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-tag">
+                        Nossas qualidades
+                    </span>
+
+                    <p>
+                        Valorizamos a colaboração,
+                        a sustentabilidade, a confiança
+                        e o benefício mútuo entre os
+                        participantes da comunidade.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-tag">
+                        Para você
+                    </span>
+
+                    <p>
+                        Encontre produtos, publique seus
+                        anúncios e descubra novas
+                        possibilidades através das trocas
+                        e doações.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
     <footer class="footer">
+
         <div></div>
-        <p>&copy; 2026 Troque aqui!.  Todos os direitos reservados.</p>
-       <div class="footer_icones">
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-       </div>
+
+        <p>
+            &copy; 2026 Troque Aqui!.
+            Todos os direitos reservados.
+        </p>
+
+        <div class="footer_icones">
+
+            <a
+                href="#"
+                aria-label="WhatsApp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+                href="#"
+                aria-label="Instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+                href="#"
+                aria-label="Facebook"
+            >
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+        </div>
+
     </footer>
 
 </body>
+
 </html>
