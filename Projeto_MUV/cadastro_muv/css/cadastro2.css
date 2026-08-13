@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cor-fundo: #f6f7fb;
+    --cor-texto: #333;
+    --cor-principal: #4010B6;
+    --cor-principal-hover: #300c8a;
+    --cor-secundaria-1: #F59E0B;
+    --cor-secundaria-2: #3478F6;
+    --borda: 12px;
+    --sombra: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    border-radius: var(--borda);
+    box-shadow: var(--sombra);
+    width: 100%;
+    gap: 15px;
+}
+
+.cadastro h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.nome-sobrenome {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.campo input {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus {
+    border-color: var(--cor-principal);
+}
+
+.botao-cadastro {
+    background: var(--cor-principal);
+    border: none;
+    border-radius: var(--borda);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.botao-cadastro:hover {
+    background: var(--cor-principal-hover);
+}

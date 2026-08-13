@@ -1,43 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Perfil - MUV</title>
     <link rel="stylesheet" href="/Projeto_MUV/perfil_muv/css/perfil.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Ícones atualizados para a versão mais estável e compatível do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header class="cabecalho">
-        
-        <section class="logo">
-
-            <img src="/Projeto_MUV/perfil_muv/img/logo_branco_canvado.png" alt="logo">
-
-        </section>
-
+        <div class="logo">
+            <img src="/Projeto_MUV/perfil_muv/img/logo_branco_canvado.png" alt="Logo MUV">
+        </div>
         <nav class="icones">
-
-            <i class="fa-regular fa-circle-user"></i>
-            <i class="fa-solid fa-comment-dots"></i>
-            <i class="fa-solid fa-bell"></i>
-
+            <i class="fa-regular fa-circle-user" aria-label="Perfil"></i>
+            <i class="fa-solid fa-comment-dots" aria-label="Mensagens"></i>
+            <i class="fa-solid fa-bell" aria-label="Notificações"></i>
         </nav>
-        
-
-
     </header>
     
     <main class="conteudo">
-
-        <section class="card">
-
+        <section class="card-container">
             <div class="profile-card">
                 <!-- Background Banner e Avatar -->
                 <div class="profile-header">
-                    <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Profile Picture" class="profile-img">
+                    <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
                 </div>
                 
                 <!-- Detalhes do Perfil -->
@@ -65,21 +54,14 @@
                         </div>
                     </div>
                     
-                    <!-- Botoes -->
+                    <!-- Botões -->
                     <div class="social-links">
                         <a href="#" class="btn">Editar Informações</a>
-                        <!-- <a href="#" class="btn">Mensagem</a> -->
-                        <!-- <a href="#" class="btn btn-outline">Salve Contato</a> -->
                     </div>
                 </div>
-            </div>            
-
-
+            </div>
         </section>
-
     </main>
-
-
 
 </body>
 </html>
