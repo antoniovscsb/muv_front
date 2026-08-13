@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+
+    --cor-fundo: #f6f7fb;
+    --cor-texto: #333;
+    --cor-principal: #4010B6;
+    --cor-secundaria-1: #F59E0B;
+    --cor-secundaria-2: #3478F6;
+    --espacamento: 20px;
+    --borda: 20px;
+
+    --tempo: 0.4s; 
+
+    --deslocamento: -10px;
+
+    --sombra: 0px 8px 20px rgba(0, 0, 0, .15);
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    height: 100vh;
+
+  
+
+}
+
+.conteudo{
+
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.cadastro{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    border-radius: var(--borda);
+
+
+}
+
+.nome-sobrenome{
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 3px;
+    border-color: black;
+    width: 100% ;
+    height: 5%;
+    margin-bottom: 7%;
+    gap: 10px;
+
+}
+
+.botao-cadastro{
+
+    background: var(--cor-principal);
+    border-radius: var(--borda);
+    color: white;
+    padding: 10px;
+    margin-top: 3%;
+
+}
+
+.input{
+
+    background: white;
+    border-radius: 3px;
+    border-color: black;
+    width: 100% ;
+    height: 5%;
+    margin-bottom: 7%;
+
+}

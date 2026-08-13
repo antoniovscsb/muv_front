@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Escambo</title>
+    <link rel="stylesheet" href="/Projeto_MUV/login_muv/css/login.css">
+    <!-- Font Awesome CDN Estável -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="/Projeto_MUV/login_muv/img/logo_branco_canvado.png" alt="Logo Escambo">
+        </div>
+
+        <nav class="icones">
+            <i class="fa-regular fa-circle-user" title="Perfil"></i>
+            <i class="fa-solid fa-comment-dots" title="Mensagens"></i>
+            <i class="fa-solid fa-bell" title="Notificações"></i>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <article class="artigo">
+            <img src="/Projeto_MUV/login_muv/img/logan.png" alt="Ilustração de boas-vindas do Escambo">
+            <h4>Encontre produtos, serviços e doações perto de você. É simples, seguro e gratuito!</h4>
+            <p>Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade da Escambo e seus parceiros, e em receber comunicações da plataforma.</p>
+        </article>
+
+        <section class="login">
+            <div class="login-google-facebook">
+                <button class="botao-google" type="button">
+                    <img src="/Projeto_MUV/login_muv/img/g google.png" alt="Ícone do Google"> 
+                    <span>Google</span>
+                </button>
+                <button class="botao-facebook" type="button">
+                    <img src="/Projeto_MUV/login_muv/img/f facebook.png" alt="Ícone do Facebook"> 
+                    <span>Facebook</span>
+                </button>
+            </div>
+
+            <div class="ouconectecom">
+                <span>ou conecte com</span>
+            </div>
+            
+            <form class="form-login">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-email" placeholder="seu@email.com" required>
+
+                <button type="submit" class="botao-email">Continuar</button>
+            </form>
+
+            <p class="naotemconta">Não tem conta? <a href="#">Cadastre-se</a></p>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
