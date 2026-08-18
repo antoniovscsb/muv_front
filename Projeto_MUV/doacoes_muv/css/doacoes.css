@@ -334,14 +334,6 @@ body{
 }
 
 
-.aside{
-
-
-    
-
-
-}
-
 .como-funciona-doacoes{
 
     display: flex;
@@ -357,7 +349,7 @@ body{
 
     display: flex;
     justify-content: space-evenly;
-    padding: 0% 13%;
+    padding: 0% 8%;
     gap: 30px;
 
 
@@ -377,7 +369,35 @@ body{
 
     color: var(--cor-secundaria-1); 
 
+}
+
+.aviso-doacao{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    background: linear-gradient(120deg, #39B66D, #046D2B);
+    gap: 30px;
+    color: white;
 
 }
+
+.aviso-doacao button{
+
+
+    padding: 18px 15px;
+    border-radius: var(--raio-borda);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: var(--cor-secundaria-1);
+    color: #ffffff;
+    border: 2px solid var(--cor-secundaria-1);
+    display: inline-block;
+}
+
+
 
 
