@@ -259,7 +259,8 @@ body{
     gap: 20px;
     justify-content: center;
     padding: 1% 8%;
-    
+    width: 92%;
+    margin: 0 auto;
     
 
 }
@@ -270,8 +271,7 @@ body{
     border-radius: var(--raio-borda);
     box-shadow: var(--sombra-card);
     justify-items: flex;
-    width: 75%;
-
+    width: 100%;
 
 }
 
@@ -332,3 +332,52 @@ body{
     border: 2px solid var(--cor-secundaria-1);
     display: inline-block;
 }
+
+
+.aside{
+
+
+    
+
+
+}
+
+.como-funciona-doacoes{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+    gap: 15px;
+    background-color: white;
+
+}
+
+.como-funciona-doacoes-info{
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0% 13%;
+    gap: 30px;
+
+
+}
+
+.como-funciona-doacoes-items{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 120%;
+    gap: 10px;
+}
+
+.como-funciona-doacoes-items i{
+
+    color: var(--cor-secundaria-1); 
+
+
+}
+
+
