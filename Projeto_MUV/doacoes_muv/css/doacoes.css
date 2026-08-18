@@ -11,6 +11,14 @@
     --transicao: 0.3s ease;
     --sombra-card: 0px 10px 30px rgba(0, 0, 0, 0.08);
     --sombra-botao: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    /* tempo de animação */
+
+    --tempo: 0.4s;
+
+    /* Distância utilizada no transform */
+    --deslocamento: -10px;
+
 }
 
 * {
@@ -217,6 +225,9 @@ body{
         0 0 0 4px rgba(46, 46, 245, 0.10);
 }
 
+
+/* Banner */
+
 .banner{
 
     display: flex;
@@ -230,6 +241,8 @@ body{
 
 }
 
+/* Navegação das Categorias */
+
 .filtrar-categoria{
 
     display: flex;
@@ -239,7 +252,17 @@ body{
 
 }
 
-.botoes-categoria button{
+/* .botoes-categoria button{
+
+    background: white;
+    border-radius: var(--raio-borda);
+    padding: 7px;
+    border-color: #62626E;
+    border-style: solid;
+
+} */
+
+.botao-categorias {
 
     background: white;
     border-radius: var(--raio-borda);
@@ -249,6 +272,14 @@ body{
 
 }
 
+.botao-categorias:hover{
+
+    background: var(--cor-secundaria-1);
+    color: white;
+}
+
+
+/* Lugar dos cards grids etc */
 
 .conteudo{
 
@@ -286,6 +317,7 @@ body{
 
 .card-peito p{
     color: #62626E;
+    margin-bottom: 5px;
 
 }
 
