@@ -89,6 +89,38 @@ body {
 /* =========================
    MENU
 ========================= */
+/*
+nav {
+    width: 65%;
+
+    margin: 25px auto 0;
+
+    border: 2px solid var(--laranja);
+
+    border-radius: 25px;
+
+
+  
+
+    align-items: center;
+
+    padding: 8px 15px;
+}
+
+nav a {
+    color: var(--branco);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+*/
 
 .menu {
     display: flex;
@@ -100,6 +132,23 @@ body {
     padding: 10px 5%;
 
     background-color: var(--cor-azul);
+    width: 65%;
+
+    margin: 25px auto 0;
+
+    border: 2px solid var(--laranja);
+
+    border-radius: 25px;
+
+
+  
+
+    align-items: center;
+
+    padding: 8px 15px;
+
+
+
 }
 
 .menu_links {
