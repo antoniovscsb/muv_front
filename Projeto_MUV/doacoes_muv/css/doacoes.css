@@ -17,7 +17,7 @@
     --tempo: 0.4s;
 
     /* Distância utilizada no transform */
-    --deslocamento: -10px;
+    --deslocamento: -4px;
 
 }
 
@@ -303,7 +303,16 @@ body{
     box-shadow: var(--sombra-card);
     justify-items: flex;
     width: 100%;
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;    
 
+}
+
+.card:hover{
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra);    
 }
 
 .card-peito{
@@ -350,6 +359,10 @@ body{
     
 }
 
+.avatar-nome p:hover{
+    color: var(--cor-principal);
+}
+
 .card-rodape button{
 
     width: 25%;
@@ -365,6 +378,32 @@ body{
     display: inline-block;
 }
 
+.card-button{
+
+    width: 25%;
+    padding: 12px 0;
+    border-radius: var(--raio-borda);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: var(--cor-secundaria-1);
+    color: #ffffff;
+    border: 2px solid var(--cor-secundaria-1);
+    display: inline-block;   
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;  
+
+}
+
+.card-button:hover{
+
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra);    
+
+}
 
 .como-funciona-doacoes{
 
@@ -415,8 +454,9 @@ body{
 
 }
 
-.aviso-doacao button{
 
+
+.button-aviso-doacao{
 
     padding: 18px 15px;
     border-radius: var(--raio-borda);
@@ -428,8 +468,73 @@ body{
     color: #ffffff;
     border: 2px solid var(--cor-secundaria-1);
     display: inline-block;
+
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;  
+
+}
+
+.button-aviso-doacao:hover{
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra); 
+}
+
+/* tudo pra baixo é do rodape */
+
+.rodape{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #005D35;
+    color: #D3C3E8;
+}
+
+.rodape-1{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.rodape-1-part1{
+    display: flex;
+    flex-direction: column;
+}
+.rodape-1-part1 img{
+    width: 20%;
+    margin-left: -2%;
+    margin-top: -3%;
+}
+
+.rodape-1-part1 p{
+    width: 25%;
+}
+
+.rodape-1-part2{
+    
+    display: flex;
+    gap: 100px;
+
 }
 
 
+.rodape-1-part2-paragrafo a{
+    color: #D3C3E8;
+    text-decoration: none;
 
 
+}
+
+.rodape-1-part2-paragrafo a:hover{
+
+    color: #ddd9e2;
+}
+
+.rodape-2{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
