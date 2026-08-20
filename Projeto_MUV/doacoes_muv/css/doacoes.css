@@ -4,7 +4,7 @@
     --cor-fundo: #f6f7fb;
     --cor-texto: #333333;
     --cor-principal: #4010B6;
-    --cor-principal-hover: #320d91;
+    --cor-principal-hover: #a786fb;
     --cor-secundaria-1: #F59E0B;
     --cor-borda: #dcdcdc;
     --raio-borda: 16px;
@@ -405,6 +405,39 @@ body{
 
 }
 
+/* trocar pag dos grid */
+
+.trocar-pag-maior{
+    display: flex;
+    justify-content: center;
+}
+.trocar-pag-conteudo{
+
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+.trocar-pag-conteudo a{
+
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: bold;
+
+}
+
+.trocar-pag-conteudo a:hover{
+
+    color: var(--cor-principal-hover);
+
+}
+
+
+
+
 .como-funciona-doacoes{
 
     display: flex;
@@ -481,6 +514,9 @@ body{
     box-shadow: var(--sombra); 
 }
 
+
+
+
 /* tudo pra baixo é do rodape */
 
 .rodape{
@@ -503,13 +539,30 @@ body{
     flex-direction: column;
 }
 .rodape-1-part1 img{
-    width: 20%;
-    margin-left: -2%;
-    margin-top: -3%;
+    width: 23%;
+    margin-bottom: 3%;
+}
+
+.rodape-icones{
+    display: flex;
+
+    gap: 15px;
+    margin-top: 15px;
+
+}
+
+.rodape-icones i{
+    font-size: 170%;
+    color: rgb(227, 227, 227);
+
+}
+
+.rodape-icones i:hover{
+    color: white;
 }
 
 .rodape-1-part1 p{
-    width: 25%;
+    width: 46%;
 }
 
 .rodape-1-part2{
@@ -519,11 +572,24 @@ body{
 
 }
 
+.rodape-1-part2-paragrafo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rodape-1-part2-paragrafo span{
+    color: white;
+}
+
+.rodape-1-part2-paragrafo p{
+
+    margin-bottom: 12%;
+}
 
 .rodape-1-part2-paragrafo a{
     color: #D3C3E8;
     text-decoration: none;
-
 
 }
 
@@ -535,6 +601,6 @@ body{
 .rodape-2{
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2%;
 }
