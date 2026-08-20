@@ -4,7 +4,7 @@
     --cor-fundo: #f6f7fb;
     --cor-texto: #333333;
     --cor-principal: #4010B6;
-    --cor-principal-hover: #320d91;
+    --cor-principal-hover: #a786fb;
     --cor-secundaria-1: #F59E0B;
     --cor-borda: #dcdcdc;
     --raio-borda: 16px;
@@ -17,7 +17,7 @@
     --tempo: 0.4s;
 
     /* Distância utilizada no transform */
-    --deslocamento: -10px;
+    --deslocamento: -4px;
 
 }
 
@@ -303,7 +303,16 @@ body{
     box-shadow: var(--sombra-card);
     justify-items: flex;
     width: 100%;
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;    
 
+}
+
+.card:hover{
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra);    
 }
 
 .card-peito{
@@ -350,6 +359,10 @@ body{
     
 }
 
+.avatar-nome p:hover{
+    color: var(--cor-principal);
+}
+
 .card-rodape button{
 
     width: 25%;
@@ -364,6 +377,65 @@ body{
     border: 2px solid var(--cor-secundaria-1);
     display: inline-block;
 }
+
+.card-button{
+
+    width: 25%;
+    padding: 12px 0;
+    border-radius: var(--raio-borda);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: var(--cor-secundaria-1);
+    color: #ffffff;
+    border: 2px solid var(--cor-secundaria-1);
+    display: inline-block;   
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;  
+
+}
+
+.card-button:hover{
+
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra);    
+
+}
+
+/* trocar pag dos grid */
+
+.trocar-pag-maior{
+    display: flex;
+    justify-content: center;
+}
+.trocar-pag-conteudo{
+
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+.trocar-pag-conteudo a{
+
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: bold;
+
+}
+
+.trocar-pag-conteudo a:hover{
+
+    color: var(--cor-principal-hover);
+
+}
+
+
 
 
 .como-funciona-doacoes{
@@ -415,8 +487,9 @@ body{
 
 }
 
-.aviso-doacao button{
 
+
+.button-aviso-doacao{
 
     padding: 18px 15px;
     border-radius: var(--raio-borda);
@@ -428,8 +501,106 @@ body{
     color: #ffffff;
     border: 2px solid var(--cor-secundaria-1);
     display: inline-block;
+
+    transition: 
+    transform var(--tempo) ease, 
+    box-shadow var(--tempo) ease, 
+    background-color var(--tempo) ease;  
+
+}
+
+.button-aviso-doacao:hover{
+    transform: translateY(var(--deslocamento)) scale(1.01);
+    box-shadow: var(--sombra); 
 }
 
 
 
 
+/* tudo pra baixo é do rodape */
+
+.rodape{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #005D35;
+    color: #D3C3E8;
+}
+
+.rodape-1{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.rodape-1-part1{
+    display: flex;
+    flex-direction: column;
+}
+.rodape-1-part1 img{
+    width: 23%;
+    margin-bottom: 3%;
+}
+
+.rodape-icones{
+    display: flex;
+
+    gap: 15px;
+    margin-top: 15px;
+
+}
+
+.rodape-icones i{
+    font-size: 170%;
+    color: rgb(227, 227, 227);
+
+}
+
+.rodape-icones i:hover{
+    color: white;
+}
+
+.rodape-1-part1 p{
+    width: 46%;
+}
+
+.rodape-1-part2{
+    
+    display: flex;
+    gap: 100px;
+
+}
+
+.rodape-1-part2-paragrafo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rodape-1-part2-paragrafo span{
+    color: white;
+}
+
+.rodape-1-part2-paragrafo p{
+
+    margin-bottom: 12%;
+}
+
+.rodape-1-part2-paragrafo a{
+    color: #D3C3E8;
+    text-decoration: none;
+
+}
+
+.rodape-1-part2-paragrafo a:hover{
+
+    color: #ddd9e2;
+}
+
+.rodape-2{
+
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
