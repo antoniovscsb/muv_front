@@ -343,6 +343,9 @@ body{
     width: 100%;  /* Set your desired box width */
     height: 300px; /* Set your desired box height */
     overflow: hidden; /* Hides any overflow if needed */
+    border-top-left-radius: var(--raio-borda);
+    border-top-right-radius: var(--raio-borda);
+
 }   
 
 .card-img img{
