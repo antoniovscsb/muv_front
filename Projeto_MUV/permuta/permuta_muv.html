@@ -4,106 +4,578 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muv Tudo em Movimento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />.
-    <link rel="stylesheet" href="/Projeto_MUV/permuta/CSS/permuta.css">    
+    <title>Document</title>
+    <link rel="stylesheet" href="/Projeto_MUV/permuta/css/permuta_muv.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    <nav class="nav-menu">
-        <a href="#">Início</a>
-        <a href="#">Categorias</a>
-        <a href="#">Meus Anúncios</a>
-        <a href="#">Trocas</a>
-        <a href="#">Permutas</a>
-        <a href="#">Doações</a>
-    </nav>
-    <main>
-        <section id="permutas">
-            <h1>Permutas</h1>
-            <p>Encontre profissionais dispostos a trocar conhecimento por serviços</p>
-            <form class="filtros-tipos">
-                <label>Tipo de anuncio:</label>
-                <select>
-                    <option>Todos os Anúncios</option>
-                    <option>Trocas</option>
-                    <option>Permutas</option>
-                    <option>Doações</option>
-                </select>
-                <br>
-                <br>
-                <label>Ordenar por:</label>
-                <select>
-                    <option>Mais recentes</option>
-                    <option>Mais antigos</option>
-                    <option>Relevantes</option>
-                    <option>Maior valor</option>
-                    <option>Menor valor</option>
-                </select>
-            </form>
-        </section>
 
-        <div class="info">
-            <p>Como funcionam as permutas?<br>
-                Troque serviços por outros serviços sem necessidade de envolver dinheiro</p>
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#" class="header_logo" aria-label="Página inicial Troque Aqui!">
+            <img src="/Projeto_MUV/permuta/img/logo.png" alt="Logo Troque Aqui!">
+        </a>
+
+        <div class="header_icones">
+
+            <a href="#" aria-label="Meu perfil">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+
+            <a href="#" aria-label="Mensagens">
+                <i class="fa-brands fa-rocketchat"></i>
+            </a>
+
+            <a href="#" aria-label="Notificações">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+
         </div>
 
-        <aside class="filtros">
-            <h3>Filtros</h3>
-            <p>LOCALIZAÇÃO</p>
-            <button>Belém-PA</button>
-            <hr>
-            <p>Categorias</p>
-            <form>
-                <label>Valor estimado:</label><br>
-                <input type="radio" name="valor"> Até R$50
-                <br>
-                <input type="radio" name="valor"> R$ 50 - R$100
-                <br>
-                <input type="radio" name="valor"> Acima
-            </form>
-            <p>Avaliação:⭐⭐⭐⭐⭐</p>
-            <button>Limpar filtros</button>
-        </aside>
+    </header>
 
-        <article class="anuncio">
-            <div class="img_anuncio"><img src="/Projeto_MUV/img/aula_permuta.webp" alt="anuncio"></div>
-            <h3>Aulas de Reforço</h3>
-            <i class="fa-regular fa-money-bill-1"></i>
-            <p>Valor estimado: R$50,00</p>
-            <i class="fa-solid fa-map-pin"></i></i>
-            <p>Belém, PA</p>
-            <i class="fa-regular fa-calendar"></i>
-            <p>Publicado há 4 dias</p>
-            <i class="fa-regular fa-eye"></i>
-            <p>36 Vizualizações</p>
-            <hr>
-            <i class="fa-regular fa-circle-user"></i>
-            <p>Fulano da Silva</p>
-            <button>Propor Permuta</button>
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <nav class="menu" aria-label="Menu principal">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="menu_links">
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Categorias</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-mountain-city"></i>
+                <span>Anúncios</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-recycle"></i>
+                <span>Trocas</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <span>Doações</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-question"></i>
+                <span>Ajuda</span>
+            </a>
+        </div>
+
+        <a href="#" class="btn_Pub_Anucio">
+            + Publicar Anúncio
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         BUSCA
+    ========================== -->
+
+    <section class="menu_busca" aria-label="Pesquisa">
+
+        <input type="search" name="busca" id="busca_site" placeholder="Digite o nome do produto..."
+            aria-label="Digite o nome do produto">
+
+    </section>
+
+
+
+    <!-- BANNER -->
+
+    <article class="banner">
+
+        <img src="/Projeto_MUV/permuta/img/banner.png" alt="banner">
+
+    </article>
+
+    <nav class="filtrar-categoria">
+
+        <p><strong>Filtrar por Categoria</strong></p>
+        <section class="botoes-categoria">
+
+            <button class="botao-categorias">
+                <P>Todos</P>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Educação</p>
+            </button>
+            <button class="botao-categorias">
+                <p>Tecnologia</p>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Casa e Reparos</p>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Beleza</p>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Design</p>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Foto e Video</p>
+            </button>
+
+            <button class="botao-categorias">
+                <p>Outros</p>
+            </button>
+
+        </section>
+
+
+    </nav>
+
+    <main class="conteudo">
+
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/aula historia.webp" alt="historia">
+            
+            
+            <section class="card-peito">
+                <h4>XBOX ONE 500GB</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 60,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 2 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+                    
+                    <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
+
+                    <p><strong>Rodrigo S.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
         </article>
 
-        <article class="anuncio">
-            <div class="img_anuncio"><img src="/Projeto_MUV/img/aula_permuta.webp" alt="anuncio"></div>
-            <h3>Aulas de Reforço</h3>
-            <i class="fa-regular fa-money-bill-1"></i>
-            <p>Valor estimado: R$50,00</p>
-            <i class="fa-solid fa-map-pin"></i></i>
-            <p>Belém, PA</p>
-            <i class="fa-regular fa-calendar"></i>
-            <p>Publicado há 4 dias</p>
-            <i class="fa-regular fa-eye"></i>
-            <p>36 Vizualizações</p>
-            <hr>
-            <i class="fa-regular fa-circle-user"></i>
-            <p>Fulano da Silva</p>
-            <button>Propor Permuta</button>
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/hig perm.webp" alt="Higienização">
+            
+            
+            <section class="card-peito">
+                <h4>Higienização estofados</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 100,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 5 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+                    
+                    <img src="https://ui-avatars.com/api/?name=Felipe+Braga&background=random&size=150" alt="Foto de Perfil de Felipe Braga" class="profile-img">
+
+                    <p><strong>Felipe B.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
         </article>
+
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/refri perm.webp" alt="Refrigeração">
+            
+            
+            <section class="card-peito">
+                <h4>Refrigeração Residencial</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 250,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 1 semana</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+                    
+                    <img src="https://ui-avatars.com/api/?name=Robson+Aleixo&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
+
+                    <p><strong>Robson A.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/viola perm.webp" alt="aula violão">
+            
+            
+            <section class="card-peito">
+                <h4>Aula de violão</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 50,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 3 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+                    
+                    <img src="https://ui-avatars.com/api/?name=Camila+Viana&background=random&size=150" alt="Foto de Perfil de Camila Viana" class="profile-img">
+
+                    <p><strong>Camila V.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/aula refor.webp" alt="aula reforço">
+            
+            
+            <section class="card-peito">
+                <h4>Aulas de reforço</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 50,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 6 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+                    
+                    <img src="https://ui-avatars.com/api/?name=Gustavo+Bruno&background=random&size=150" 
+                    alt="Foto de Perfil de Gustavo Bruno" class="profile-img">
+
+                    <p><strong>Gustavo B.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/design convites.webp" alt="Convites">
+            
+            
+            <section class="card-peito">
+                <h4>Convites personalizados</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 100,00/p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 4 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+
+                    <img src="https://ui-avatars.com/api/?name=Leticia+Mendes&background=random&size=150" 
+                    alt="Foto de Perfil de Leticia Mendes" class="profile-img">
+
+                    <p><strong>Leticia M.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/contabeis.webp" alt="contabeis">
+
+   <section class="card-peito">
+                <h4>Serviços contábeis</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 200,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 6 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+
+                    <img src="https://ui-avatars.com/api/?name=Guilherme+Bentes&background=random&size=150" 
+                    alt="Foto de Perfil de Guilherme Bentes" class="profile-img">
+
+                    <p><strong>Guilherme B.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/TI.webp" alt="Convites">
+
+           <section class="card-peito">
+                <h4>Manutenção de computadores</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: 100,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 4 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+
+                    <img src="https://ui-avatars.com/api/?name=Leyla+Moon&background=random&size=150" 
+                    alt="Foto de Perfil de Leyla Moon" class="profile-img">
+
+                    <p><strong>Leyla M.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+        <article class="card">
+            
+            <img src="/Projeto_MUV/permuta/img/serv_eletric.webp" alt="Convites">
+           <section class="card-peito">
+                <h4>Serviços de elétrica residencial</h4>
+                <p><i class="fa-solid fa-circle-info"></i> Valor estimado: R$ 250,00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Belém, PA</p>
+                <p><i class="fa-regular fa-clock"></i> Publicado há 3 dias</p>
+            </section>
+            <section class="card-rodape">
+
+                <div class="avatar-nome">
+
+                    <img src="https://ui-avatars.com/api/?name=Carlos+Antuness&background=random&size=150" 
+                    alt="Foto de Perfil de Carlos Antunes" class="profile-img">
+
+                    <p><strong>Leticia M.</strong></p>
+
+
+                </div>
+
+
+                <button class="card-button">Permutar</button>
+
+
+            </section>
+
+
+        </article>
+
+
     </main>
+
+    <div class="trocar-pag-maior">
+        <div class="trocar-pag-conteudo">
+
+            <a href="#" class="pagina-numero">1</a>
+            <a href="#" class="pagina-numero">2</a>
+            <a href="#" class="pagina-numero">3</a>
+            <a href="#" class="pagina-numero">4</a>
+            <a href="#" class="pagina-numero">5</a>
+            <a href="#" class="pagina-numero">6</a>
+            <a href="#" class="pagina-numero">7</a>
+            <a href="#" class="pagina-numero">8</a>
+            <a href="#" class="pagina-numero">9</a>
+            <a href="#" class="pagina-numero">10</a>
+            <a href="#" class="pagina-proxima">Próxima página</a>
+            <a href="#" class="pagina-ultima">Ultima página</a>
+
+        </div>
+
+    </div>
+
+
+    <aside class="aside">
+
+        <article class="como-funciona-doacoes">
+
+            <h2><strong>Como funcionam as Permutas?</strong></h2>
+
+            <p>O processo é totalmente gratuito, simples e focado em fazer o bem.</p>
+
+            <section class="como-funciona-doacoes-info">
+
+                <div class="como-funciona-doacoes-items">
+
+                    <i class="fa-solid fa-image"></i>
+                    <h4>Publique seu Serviço</h4>
+                    <p>Envie fotos, dê uma descrição serviço que você oferece e escolha a categoria.</p>
+
+
+                </div>
+
+                <div class="como-funciona-doacoes-items">
+
+                    <i class="fa-regular fa-comment"></i>
+                    <h4>Alguém solicita</h4>
+                    <p>Os membros da comunidade MUV interessados enviarão uma solicitação de permuta diretamente para você.</p>
+
+
+                </div>
+                
+                <div class="como-funciona-doacoes-items">
+
+                    <i class="fa-regular fa-truck"></i>
+                    <h4>Combine o serviço</h4>
+                    <p>Abra o chat integrado do MUV e alinhem , e pronto! mais pessoas estão conectadas.</p>
+
+
+                </div>                
+
+            </section>
+
+        </article>
+
+        <article class="aviso-doacao">
+
+            <h1>Tem uma habilidade para compartilhar?</h1>
+
+            <p>Aquele casaco esquecido, um livro que você já leu ou móveis que precisam de espaço. Dê um novo destino e faça a diferença no dia de alguém hoje mesmo.</p>
+
+            <button class="button-aviso-doacao">+ Publicar Permuta agora</button>
+
+
+
+        </article>
+
+
+    </aside>
+
+    <!-- classe rodape  -->
+
+    <footer class="rodape">
+
+        <article class="rodape-1">
+
+            <div class="rodape-1-part1">
+
+                <img src="/Projeto_MUV/permuta/img/logo.png" alt="logo">
+                <p>MUV é a sua plataforma brasileira favorita para trocas, permutas e doações. Conectando pessoas e incentivando o consumo consciente em todo o país.</p>
+                <div class="rodape-icones">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="rodape-1-part2">
+
+                <div class="rodape-1-part2-paragrafo">
+                    <span><strong>Plataforma</strong></span><br>
+                    <a href="#">Trocas</a><br>
+                    <a href="#">Permutas</a><br>
+                    <a href="#">Doações</a><br>
+                    <a href="#">Como funciona</a>
+                </div>  
+
+                <div class="rodape-1-part2-paragrafo">
+                    <span><strong>Suporte</strong></span><br>
+                    <a href="#">Central de Ajuda</a><br>
+                    <a href="#">Segurança<a><br>
+                    <a href="#">Termos de uso</a><br>
+                    <a href="#">Privacidade</a>
+                </div>
+                
+                <div class="rodape-1-part2-paragrafo">
+                    <span><strong>Fale Conosco</strong></span><br>
+                    <p>suporte@muv.com.br</p>
+                    <p>Belém, Brasil</p>
+
+                </div>                
+            </div>
+
+        </article>
+
+        <article class="rodape-2">
+    
+            <div class="rodape-2-part1">
+                <p>© 2026 MUV Brasil. Todos os direitos reservados.</p>
+            </div>
+
+        </article>
+
+    </footer>
+
 </body>
-<footer class="rodape">
-<img src="/Projeto_MUV/img/ChatGPT Image 4 de ago. de 2026, 10_33_14.png" alt="logo_black">
-</footer>
 
 </html>
