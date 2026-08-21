@@ -123,6 +123,8 @@ header {
     cursor: pointer;
 
     transition: 0.3s;
+
+    margin-top: 25px;
 }
 
 .acoes button:hover {
