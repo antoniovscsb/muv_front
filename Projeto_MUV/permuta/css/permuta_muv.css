@@ -1,64 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
 
 :root {
+
     --cor-fundo: #f6f7fb;
     --cor-texto: #333333;
-    --cor-principal: #4010B6;
-    --cor-principal-hover: #a786fb;
-    --cor-secundaria-1: #F59E0B;
-    --cor-borda: #dcdcdc;
-    --raio-borda: 16px;
-    --transicao: 0.3s ease;
-    --sombra-card: 0px 10px 30px rgba(0, 0, 0, 0.08);
-    --sombra-botao: 0px 4px 12px rgba(0, 0, 0, 0.1);
 
-    /* tempo de animação */
-
-    --tempo: 0.4s;
-
-    /* Distância utilizada no transform */
-    --deslocamento: -4px;
-
-    /* Variaveis do cabeçalho */
-
-    --roxo: #4318c4;
+    --roxo: #4010b6;
     --roxo-escuro: #2f0c99;
 
+    --laranja: #f59e0b;
+    --laranja-escuro: #d88905;
+
     --verde: #35b96e;
-    --verde-escuro: #249653;
-
-    --laranja: #ff9f00;
-    --laranja-escuro: #e68f00;
-
-    --azul: #3478ed;
-    --azul-escuro: #1f5fc7;
+    --verde-escuro: #1f8f50;
 
     --branco: #ffffff;
-    --cinza-claro: #f4f5f9;
-    --cinza: #777777;
-    --cinza-borda: #dddddd;
 
-    --texto: #202231;
+    --cinza: #62626e;
+    --cinza-claro: #eeeeee;
+    --cinza-borda: #dcdcdc;
 
-    --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
-    --sombra-hover: 0 10px 20px rgba(0, 0, 0, 0.20);
+    --raio-borda: 16px;
 
-    --raio: 12px;
+    --transicao: 0.3s ease;
 
+    --sombra-card:
+        0px 8px 25px rgba(0, 0, 0, 0.10);
+
+    --sombra-hover:
+        0px 14px 30px rgba(0, 0, 0, 0.16);
+
+    --sombra-botao:
+        0px 5px 14px rgba(0, 0, 0, 0.15);
 }
+
+
+/* =========================
+   RESET
+========================= */
 
 * {
-    box-sizing: border-box;
-    padding: 0;
+
     margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
 }
 
-body{
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+
     background-color: var(--cor-fundo);
+
     color: var(--cor-texto);
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -66,165 +73,196 @@ body{
    CABEÇALHO
 ========================= */
 
-header {
+.header {
+
     background-color: var(--roxo);
-    padding: 20px 50px 12px;
-}
 
-.topo {
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 6%;
 }
 
-.logo {
-    width: 200px;
-    transition: transform 0.3s;
+
+.header_logo img {
+
+    width: 180px;
+
+    display: block;
+
+    transition: transform var(--transicao);
 }
 
-.logo:hover {
+
+.header_logo img:hover {
+
     transform: scale(1.05);
 }
 
-.acoes button{
+
+/* ÍCONES DO CABEÇALHO */
+
+.header_icones {
+
     display: flex;
+
     align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    background-color: var(--cor-laranja);
-    color: #333;
-     border-radius: var(--borda);
-     font-size: 15px;
-    font-weight: bold;
+
+    gap: 22px;
+}
+
+
+.header_icones a {
+
+    color: var(--branco);
+
+    font-size: 26px;
+
     text-decoration: none;
-    white-space: nowrap;
-     cursor: pointer;
 
     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        color var(--transicao),
+        transform var(--transicao);
 }
 
-/* =========================    ''  
-   AÇÕES DO TOPO
-========================= */
 
-.acoes {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: var(--branco);
-    font-size: 24px;
-}
+.header_icones a:hover {
 
-.acoes a {
+    color: var(--laranja);
 
-    color: white;
-}
-
-.acoes span {
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.acoes span:hover {
-    color: var(--laranja-escuro);
     transform: translateY(-4px);
 }
 
-.acoes button {
-    background-color: var(--laranja);
-
-    border: none;
-
-    padding: 12px 22px;
-
-    border-radius: 25px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-
-    margin-top: 25px;
-}
-
-.acoes button:hover {
-    background-color: var(--laranja-escuro);
-
-    transform: scale(1.05);
-
-    box-shadow: var(--sombra);
-}
-
 
 /* =========================
-   MENU
+   MENU PRINCIPAL
 ========================= */
 
-nav {
-    width: 65%;
+.menu {
 
-    margin: 25px auto 0;
+    width: 88%;
+
+    margin: 18px auto;
+
+    padding: 8px 14px;
 
     border: 2px solid var(--laranja);
 
-    border-radius: 25px;
+    border-radius: 30px;
 
     display: flex;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
     align-items: center;
 
-    padding: 8px 15px;
+    background-color: var(--roxo);
 }
 
-nav a {
+
+.menu_links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.menu_links a {
+
     color: var(--branco);
 
     text-decoration: none;
 
-    font-size: 14px;
-
-    padding: 6px 12px;
+    padding: 8px 12px;
 
     border-radius: 20px;
 
-    transition: 0.3s;
+    font-size: 14px;
+
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        transform var(--transicao);
 }
 
-nav a:hover {
+
+.menu_links a i {
+
     color: var(--laranja);
+
+    margin-right: 5px;
+}
+
+
+.menu_links a:hover {
+
+    color: var(--laranja);
+
     background-color: rgba(255, 255, 255, 0.12);
 
-
     transform: translateY(-2px);
-
-     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-
 }
 
-nav i{
-    color: var(--laranja);
+
+.menu_links a:active {
+
+    transform: scale(0.95);
 }
+
+
+/* BOTÃO PUBLICAR */
+
+.btn_Pub_Anucio {
+
+    background-color: var(--laranja);
+
+    color: var(--cor-texto);
+
+    padding: 10px 18px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.btn_Pub_Anucio:hover {
+
+    background-color: var(--laranja-escuro);
+
+    color: var(--branco);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--sombra-botao);
+}
+
 
 /* =========================
-   PESQUISA
+   CAMPO DE BUSCA
 ========================= */
 
-.pesquisa{
+.menu_busca {
+
     width: 500px;
 
-    margin: 18px auto;
-
-    display: flex;
+    margin: 25px auto;
 
     background-color: var(--branco);
 
@@ -232,583 +270,1036 @@ nav i{
 
     border-radius: 30px;
 
-    overflow: hidden;
-
-    transition: 0.3s;
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao);
 }
 
-.pesquisa:hover {
-    box-shadow: var(--sombra);
+
+.menu_busca:hover {
 
     transform: scale(1.01);
+
+    box-shadow: var(--sombra-botao);
 }
 
-.pesquisa input {
+
+.menu_busca:focus-within {
+
+    box-shadow:
+        0 0 0 4px rgba(245, 158, 11, 0.18);
+}
+
+
+.menu_busca input {
+
     width: 100%;
+
+    padding: 13px 20px;
 
     border: none;
 
     outline: none;
 
-    padding: 12px 20px;
+    border-radius: 30px;
 
-    font-size: 18px;
+    font-size: 16px;
 
-    color: var(--texto);
-}
-
-.pesquisa input::placeholder {
-    color: var(--laranja);
-}
-
-.pesquisa button {
-    width: 60px;
-
-    border: none;
-
-    background-color: var(--branco);
-
-    font-size: 22px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.pesquisa button:hover {
-    background-color: var(--laranja);
+    color: var(--cor-texto);
 }
 
 
-/* Banner */
+.menu_busca input::placeholder {
 
-.banner{
-
-    display: flex;
-    justify-content: center;
-
-}
-
-.banner img{
-
-    width: 90%;
-
-}
-
-/* Navegação das Categorias */
-
-.filtrar-categoria{
-
-    display: flex;
-    flex-direction: column;
-    margin-left: 12%;
-    gap: 15px;
-
-}
-
-/* .botoes-categoria button{
-
-    background: white;
-    border-radius: var(--raio-borda);
-    padding: 7px;
-    border-color: #62626E;
-    border-style: solid;
-
-} */
-
-.botao-categorias {
-
-    background: white;
-    border-radius: var(--raio-borda);
-    padding: 7px;
-    border-color: #62626E;
-    border-style: solid;
-
-}
-
-.botao-categorias:hover{
-
-    background: var(--cor-secundaria-1);
-    color: white;
-}
-
-
-/* Lugar dos cards grids etc */
-
-.conteudo{
-
-    grid-area: conteudo;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    gap: 20px;
-    justify-content: center;
-    padding: 1% 8%;
-    width: 92%;
-    margin: 0 auto;
-    
-
-}
-
-.card{
-
-    background-color: white;
-    border-radius: var(--raio-borda);
-    box-shadow: var(--sombra-card);
-    justify-items: flex;
-    width: 100%;
-    transition: 
-    transform var(--tempo) ease, 
-    box-shadow var(--tempo) ease, 
-    background-color var(--tempo) ease;    
-
-}
-
-.card:hover{
-    transform: translateY(var(--deslocamento)) scale(1.01);
-    box-shadow: var(--sombra);    
-}
-
-.card-peito{
-    padding: 10px;
-}
-
-.card-peito h4{
-    font-size: 125%;
-    margin-bottom: 10px;
-}
-
-.card-peito p{
-    color: #62626E;
-    margin-bottom: 5px;
-
-}
-
-.card-rodape{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-
-.card-img{
-
-    width: 100%;  /* Set your desired box width */
-    height: 300px; /* Set your desired box height */
-    overflow: hidden; /* Hides any overflow if needed */
-    border-top-left-radius: var(--raio-borda);
-    border-top-right-radius: var(--raio-borda);
-
-}   
-
-.card-img img{
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    
-
-
-}
-
-
-/* .card img{
-
-
-    width: 100%;
-    border-top-left-radius: var(--raio-borda);
-    border-top-right-radius: var(--raio-borda);
-
-} */
-
-.avatar-nome{
-    display: flex;
-    align-items: center;
-    gap: 3%;
-}
-
-.avatar-nome img{
-    
-    border-radius: 50%;
-    width: 18%;
-    
-}
-
-.avatar-nome p:hover{
-    color: var(--cor-principal);
-}
-
-.card-rodape button{
-
-    width: 25%;
-    padding: 12px 0;
-    border-radius: var(--raio-borda);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    background-color: var(--cor-secundaria-1);
-    color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
-    display: inline-block;
-}
-
-.card-button{
-
-    width: 25%;
-    padding: 12px 0;
-    border-radius: var(--raio-borda);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    background-color: var(--cor-secundaria-1);
-    color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
-    display: inline-block;   
-    transition: 
-    transform var(--tempo) ease, 
-    box-shadow var(--tempo) ease, 
-    background-color var(--tempo) ease;  
-
-}
-
-.card-button:hover{
-
-    transform: translateY(var(--deslocamento)) scale(1.01);
-    box-shadow: var(--sombra);    
-
-}
-
-/* trocar pag dos grid */
-
-.trocar-pag-maior{
-    display: flex;
-    justify-content: center;
-}
-.trocar-pag-conteudo{
-
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-decoration: none;
-}
-
-.trocar-pag-conteudo a{
-
-    text-decoration: none;
-    font-size: 110%;
-    font-weight: bold;
-
-}
-
-.trocar-pag-conteudo a:hover{
-
-    color: var(--cor-principal-hover);
-
-}
-
-
-
-
-.como-funciona-doacoes{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 90px;
-    gap: 15px;
-    background-color: white;
-
-}
-
-.como-funciona-doacoes-info{
-
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0% 8%;
-    gap: 30px;
-
-
-}
-
-.como-funciona-doacoes-items{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 120%;
-    gap: 10px;
-}
-
-.como-funciona-doacoes-items i{
-
-    color: var(--cor-secundaria-1); 
-
-}
-
-.aviso-doacao{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 70px;
-    background: linear-gradient(120deg, #39B66D, #046D2B);
-    gap: 30px;
-    color: white;
-
-}
-
-
-
-.button-aviso-doacao{
-
-    padding: 18px 15px;
-    border-radius: var(--raio-borda);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    background-color: var(--cor-secundaria-1);
-    color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
-    display: inline-block;
-
-    transition: 
-    transform var(--tempo) ease, 
-    box-shadow var(--tempo) ease, 
-    background-color var(--tempo) ease;  
-
-}
-
-.button-aviso-doacao:hover{
-    transform: translateY(var(--deslocamento)) scale(1.01);
-    box-shadow: var(--sombra); 
-}
-
-
-
-
-/* tudo pra baixo é do rodape */
-
-.rodape{
-
-    display: flex;
-    flex-direction: column;
-    background-color: #005D35;
-    color: #D3C3E8;
-}
-
-.rodape-1{
-
-    display: flex;
-    justify-content: space-between;
-    padding: 4%;
-}
-
-.rodape-1-part1{
-    display: flex;
-    flex-direction: column;
-}
-.rodape-1-part1 img{
-    width: 23%;
-    margin-bottom: 3%;
-}
-
-.rodape-icones{
-    display: flex;
-
-    gap: 15px;
-    margin-top: 15px;
-
-}
-
-.rodape-icones i{
-    font-size: 170%;
-    color: rgb(227, 227, 227);
-
-}
-
-.rodape-icones i:hover{
-    color: white;
-}
-
-.rodape-1-part1 p{
-    width: 46%;
-}
-
-.rodape-1-part2{
-    
-    display: flex;
-    gap: 100px;
-
-}
-
-.rodape-1-part2-paragrafo{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.rodape-1-part2-paragrafo span{
-    color: white;
-}
-
-.rodape-1-part2-paragrafo p{
-
-    margin-bottom: 12%;
-}
-
-.rodape-1-part2-paragrafo a{
-    color: #D3C3E8;
-    text-decoration: none;
-
-}
-
-.rodape-1-part2-paragrafo a:hover{
-
-    color: #ddd9e2;
-}
-
-.rodape-2{
-
-    display: flex;
-    justify-content: center;
-    padding: 2%;
+    color: var(--cinza);
 }
 
 
 /* =========================
-   RESPONSIVIDADE (MEDIA QUERIES)
+   BANNER
 ========================= */
 
-/* Tablets (até 1024px) */
+.banner {
+
+    width: 88%;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.banner img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 12px;
+
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.banner img:hover {
+
+    transform: scale(1.01);
+
+    box-shadow: var(--sombra-card);
+}
+
+
+/* =========================
+   FILTRO POR CATEGORIA
+========================= */
+
+.filtrar-categoria {
+
+    width: 76%;
+
+    margin: 35px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.filtrar-categoria > p {
+
+    font-size: 18px;
+
+    color: var(--cor-texto);
+}
+
+
+.botoes-categoria {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.botao-categorias {
+
+    background-color: var(--branco);
+
+    color: var(--cinza);
+
+    border: 1px solid var(--cinza);
+
+    border-radius: var(--raio-borda);
+
+    padding: 8px 16px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        border-color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.botao-categorias:hover {
+
+    background-color: var(--laranja);
+
+    border-color: var(--laranja);
+
+    color: var(--branco);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--sombra-botao);
+}
+
+
+.botao-categorias:active {
+
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   ÁREA DOS CARDS
+========================= */
+
+.conteudo {
+
+    width: 84%;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background-color: var(--branco);
+
+    border-radius: var(--raio-borda);
+
+    overflow: hidden;
+
+    box-shadow: var(--sombra-card);
+
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--sombra-hover);
+}
+
+
+/* IMAGEM DO CARD */
+
+.card > img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform var(--transicao);
+}
+
+
+.card:hover > img {
+
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   CORPO DO CARD
+========================= */
+
+.card-peito {
+
+    padding: 15px;
+}
+
+
+.card-peito h4 {
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+    color: var(--cor-texto);
+}
+
+
+.card-peito p {
+
+    color: var(--cinza);
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+.card-peito i {
+
+    color: var(--laranja);
+
+    margin-right: 5px;
+}
+
+
+/* =========================
+   RODAPÉ DO CARD
+========================= */
+
+.card-rodape {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 15px;
+
+    border-top: 1px solid var(--cinza-borda);
+}
+
+
+.avatar-nome {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.avatar-nome img {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+.avatar-nome p {
+
+    font-size: 13px;
+
+    transition: color var(--transicao);
+}
+
+
+.avatar-nome p:hover {
+
+    color: var(--roxo);
+
+    cursor: pointer;
+}
+
+
+/* BOTÃO PERMUTAR */
+
+.card-button {
+
+    background-color: var(--laranja);
+
+    color: var(--branco);
+
+    border: 2px solid var(--laranja);
+
+    border-radius: 12px;
+
+    padding: 9px 14px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transicao),
+        border-color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.card-button:hover {
+
+    background-color: var(--laranja-escuro);
+
+    border-color: var(--laranja-escuro);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--sombra-botao);
+}
+
+
+.card-button:active {
+
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   PAGINAÇÃO
+========================= */
+
+.trocar-pag-maior {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin: 35px 0;
+}
+
+
+.trocar-pag-conteudo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.trocar-pag-conteudo a {
+
+    text-decoration: none;
+
+    color: var(--roxo);
+
+    font-weight: 600;
+
+    padding: 8px 11px;
+
+    border-radius: 8px;
+
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        transform var(--transicao);
+}
+
+
+.trocar-pag-conteudo a:hover {
+
+    background-color: var(--roxo);
+
+    color: var(--branco);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.como-funciona-doacoes {
+
+    background-color: var(--branco);
+
+    padding: 70px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+}
+
+
+.como-funciona-doacoes h2 {
+
+    color: var(--roxo);
+
+    font-size: 28px;
+}
+
+
+.como-funciona-doacoes > p {
+
+    color: var(--cinza);
+
+    max-width: 650px;
+}
+
+
+.como-funciona-doacoes-info {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    gap: 30px;
+
+    margin-top: 25px;
+}
+
+
+.como-funciona-doacoes-items {
+
+    flex: 1;
+
+    max-width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    border-radius: var(--raio-borda);
+
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.como-funciona-doacoes-items:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--sombra-card);
+}
+
+
+.como-funciona-doacoes-items i {
+
+    color: var(--laranja);
+
+    font-size: 35px;
+}
+
+
+.como-funciona-doacoes-items h4 {
+
+    font-size: 18px;
+}
+
+
+.como-funciona-doacoes-items p {
+
+    color: var(--cinza);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ÁREA DE CHAMADA
+========================= */
+
+.aviso-doacao {
+
+    background:
+        linear-gradient(
+            120deg,
+            #39b66d,
+            #046d2b
+        );
+
+    color: var(--branco);
+
+    padding: 65px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+}
+
+
+.aviso-doacao h1 {
+
+    font-size: 30px;
+}
+
+
+.aviso-doacao p {
+
+    max-width: 700px;
+
+    line-height: 1.5;
+}
+
+
+.button-aviso-doacao {
+
+    padding: 13px 20px;
+
+    border-radius: var(--raio-borda);
+
+    border: 2px solid var(--laranja);
+
+    background-color: var(--laranja);
+
+    color: var(--branco);
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
+}
+
+
+.button-aviso-doacao:hover {
+
+    background-color: var(--laranja-escuro);
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--sombra-botao);
+}
+
+
+.button-aviso-doacao:active {
+
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+
+    background-color: #005d35;
+
+    color: #d3c3e8;
+}
+
+
+.rodape-1 {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 50px 6%;
+
+    gap: 50px;
+}
+
+
+.rodape-1-part1 {
+
+    width: 45%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.rodape-1-part1 img {
+
+    width: 170px;
+
+    margin-bottom: 20px;
+}
+
+
+.rodape-1-part1 p {
+
+    line-height: 1.5;
+}
+
+
+/* REDES SOCIAIS */
+
+.rodape-icones {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.rodape-icones i {
+
+    font-size: 25px;
+
+    color: #e3e3e3;
+
+    transition:
+        color var(--transicao),
+        transform var(--transicao);
+}
+
+
+.rodape-icones i:hover {
+
+    color: var(--laranja);
+
+    transform: translateY(-4px);
+}
+
+
+/* LINKS DO RODAPÉ */
+
+.rodape-1-part2 {
+
+    display: flex;
+
+    gap: 70px;
+}
+
+
+.rodape-1-part2-paragrafo {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.rodape-1-part2-paragrafo span {
+
+    color: var(--branco);
+
+    margin-bottom: 10px;
+}
+
+
+.rodape-1-part2-paragrafo a {
+
+    color: #d3c3e8;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+    transition:
+        color var(--transicao),
+        transform var(--transicao);
+}
+
+
+.rodape-1-part2-paragrafo a:hover {
+
+    color: var(--laranja);
+
+    transform: translateX(4px);
+}
+
+
+.rodape-1-part2-paragrafo p {
+
+    margin-bottom: 8px;
+}
+
+
+/* PARTE FINAL DO RODAPÉ */
+
+.rodape-2 {
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+
+/* TABLETS */
+
 @media (max-width: 1024px) {
-    header {
-        padding: 15px 20px;
+
+    .menu {
+
+        width: 95%;
     }
 
-    nav {
-        width: 90%;
-        flex-wrap: wrap;
-        gap: 5px;
+
+    .menu_links {
+
+        gap: 2px;
     }
+
+
+    .menu_links a {
+
+        font-size: 12px;
+
+        padding: 6px 8px;
+    }
+
 
     .conteudo {
-        grid-template-columns: 1fr 1fr; /* 2 colunas nos cards */
-        padding: 1% 4%;
+
+        width: 90%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
+
+    .filtrar-categoria {
+
+        width: 90%;
+    }
+
+
+    .banner {
+
+        width: 92%;
+    }
+
+
+    .como-funciona-doacoes-info {
+
+        flex-wrap: wrap;
+    }
+
 
     .rodape-1 {
+
         flex-direction: column;
-        gap: 40px;
     }
 
-    .rodape-1-part1 p {
+
+    .rodape-1-part1 {
+
         width: 100%;
     }
 
+
     .rodape-1-part2 {
-        gap: 40px;
+
         flex-wrap: wrap;
+
+        gap: 40px;
     }
 }
 
-/* Celulares (até 768px) */
+
+/* CELULARES */
+
 @media (max-width: 768px) {
-    header {
-        padding: 15px 10px;
+
+    .header {
+
+        padding: 15px 20px;
     }
 
-    .topo {
-        flex-direction: column;
-        gap: 15px;
+
+    .header_logo img {
+
+        width: 140px;
     }
 
-    .logo {
-        width: 150px;
+
+    .header_icones {
+
+        gap: 14px;
     }
 
-    .acoes {
-        gap: 15px;
-        font-size: 20px;
+
+    .header_icones a {
+
+        font-size: 22px;
     }
 
-    /* Transforma o menu em uma barra deslizante ou empilhada */
-    nav {
-        width: 100%;
+
+    .menu {
+
+        width: 95%;
+
         overflow-x: auto;
+
         justify-content: flex-start;
-        padding: 10px;
-        gap: 10px;
+
+        gap: 15px;
     }
 
-    nav::-webkit-scrollbar {
-        height: 4px;
+
+    .menu_links {
+
+        min-width: max-content;
     }
 
-    nav::-webkit-scrollbar-thumb {
-        background-color: var(--laranja);
-        border-radius: 4px;
+
+    .btn_Pub_Anucio {
+
+        min-width: max-content;
     }
 
-    nav a {
-        white-space: nowrap;
-        font-size: 13px;
-        padding: 4px 8px;
-    }
 
-    .pesquisa {
+    .menu_busca {
+
         width: 90%;
     }
 
-    .filtrar-categoria {
-        margin-left: 5%;
-        margin-right: 5%;
+
+    .banner {
+
+        width: 95%;
     }
 
+
+    .filtrar-categoria {
+
+        width: 90%;
+    }
+
+
     .botoes-categoria {
-        display: flex;
+
+        flex-wrap: nowrap;
+
         overflow-x: auto;
-        gap: 10px;
+
         padding-bottom: 5px;
     }
 
-    .botoes-categoria::-webkit-scrollbar {
-        display: none; /* Esconde a barra de rolagem no mobile mantendo a função */
-    }
 
     .botao-categorias {
-        white-space: nowrap;
+
+        min-width: max-content;
     }
 
-    /* 1 coluna para os produtos no celular */
+
     .conteudo {
+
+        width: 90%;
+
         grid-template-columns: 1fr;
-        padding: 1% 2%;
     }
 
-    .trocar-pag-conteudo {
-        width: 90%;
-        overflow-x: auto;
-        gap: 10px;
-        padding: 10px 0;
+
+    .card > img {
+
+        height: 250px;
     }
+
 
     .como-funciona-doacoes {
-        padding: 40px 20px;
+
+        padding: 45px 20px;
     }
+
 
     .como-funciona-doacoes-info {
+
         flex-direction: column;
-        gap: 20px;
+
+        align-items: center;
     }
 
-    .aviso-doacao {
-        padding: 40px 20px;
-        text-align: center;
+
+    .como-funciona-doacoes-items {
+
+        max-width: 100%;
     }
+
+
+    .aviso-doacao {
+
+        padding: 45px 20px;
+    }
+
+
+    .rodape-1 {
+
+        padding: 40px 20px;
+    }
+
+
+    .rodape-1-part2 {
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 480px) {
+
+    .header_logo img {
+
+        width: 120px;
+    }
+
+
+    .header_icones a {
+
+        font-size: 20px;
+    }
+
+
+    .card-rodape {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .card-button {
+
+        width: 100%;
+    }
+
+
+    .aviso-doacao h1 {
+
+        font-size: 24px;
+    }
+
+
+    .como-funciona-doacoes h2 {
+
+        font-size: 24px;
+    }
+
 }
