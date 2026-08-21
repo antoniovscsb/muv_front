@@ -679,3 +679,136 @@ nav i{
     justify-content: center;
     padding: 2%;
 }
+
+
+/* =========================
+   RESPONSIVIDADE (MEDIA QUERIES)
+========================= */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr 1fr; /* 2 colunas nos cards */
+        padding: 1% 4%;
+    }
+
+    .rodape-1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .rodape-1-part1 p {
+        width: 100%;
+    }
+
+    .rodape-1-part2 {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .topo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .acoes {
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    /* Transforma o menu em uma barra deslizante ou empilhada */
+    nav {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    nav::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+        background-color: var(--laranja);
+        border-radius: 4px;
+    }
+
+    nav a {
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .pesquisa {
+        width: 90%;
+    }
+
+    .filtrar-categoria {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .botoes-categoria {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .botoes-categoria::-webkit-scrollbar {
+        display: none; /* Esconde a barra de rolagem no mobile mantendo a função */
+    }
+
+    .botao-categorias {
+        white-space: nowrap;
+    }
+
+    /* 1 coluna para os produtos no celular */
+    .conteudo {
+        grid-template-columns: 1fr;
+        padding: 1% 2%;
+    }
+
+    .trocar-pag-conteudo {
+        width: 90%;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .como-funciona-doacoes {
+        padding: 40px 20px;
+    }
+
+    .como-funciona-doacoes-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aviso-doacao {
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
