@@ -14,94 +14,54 @@
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
+    <!-- CABEÇALHO -->
+    <header>
 
-    <header class="header">
+        <div class="topo">
 
-        <a href="#" class="header_logo" aria-label="Página inicial Troque Aqui!">
-            <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="Logo Troque Aqui!">
-        </a>
+            <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="Logo MUV" class="logo">
 
-        <div class="header_icones">
-
-            <a href="#" aria-label="Meu perfil">
-                <i class="fa-regular fa-circle-user"></i>
-            </a>
-
-            <a href="#" aria-label="Mensagens">
-                <i class="fa-brands fa-rocketchat"></i>
-            </a>
-
-            <a href="#" aria-label="Notificações">
-                <i class="fa-regular fa-bell"></i>
-            </a>
-
+            <div class="acoes">
+                <a href="/Projeto_MUV/perfil_muv/html/perfil.html"><span><i class="fa-regular fa-circle-user"></i></span></a>
+                <a href="/Projeto_MUV/chat_muv/HTML/sobre.html"><span><i class="fa-regular fa-message"></i></span></a>
+                <a href=""><span><i class="fa-regular fa-bell"></i></span></a>
+                
+            </div>
+            
         </div>
+<div class="acoes button">
+        <!-- MENU -->
+       <nav>
+            <a href="/Projeto_MUV/home/index_muv.html"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="#"><i class="fa-solid fa-layer-group"></i> Categorias</a>
+            <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
+            <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
+            <a href="/Projeto_MUV/permuta/permuta_muv.html"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
+            <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
+            <a href="/Projeto_MUV/sobre_muv/HTML/sobre.html"><i class="fa-solid fa-info"></i> Sobre</a>
+            <a href=""><i class="fa-solid fa-question"></i> Ajuda</a>
+            
+            
+        </nav>
+        <button> + Publicar anúncio</button>
+    
+    </div>   
+        
 
     </header>
 
 
-    <!-- =========================
-         MENU
-    ========================== -->
+    <!-- PESQUISA -->
+    <section class="pesquisa">
 
-    <nav class="menu" aria-label="Menu principal">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="menu_links">
+        <input
+            type="text"
+            placeholder="Buscar produtos ou serviços..."
+        >
 
-            <a href="#">
-                <i class="fa-solid fa-house"></i>
-                <span>Início</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-layer-group"></i>
-                <span>Categorias</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-mountain-city"></i>
-                <span>Anúncios</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-recycle"></i>
-                <span>Trocas</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <span>Doações</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-question"></i>
-                <span>Ajuda</span>
-            </a>
-        </div>
-
-        <a href="#" class="btn_Pub_Anucio">
-            + Publicar Anúncio
-        </a>
-
-    </nav>
-
-
-    <!-- =========================
-         BUSCA
-    ========================== -->
-
-    <section class="menu_busca" aria-label="Pesquisa">
-
-        <input type="search" name="busca" id="busca_site" placeholder="Digite o nome do produto..."
-            aria-label="Digite o nome do produto">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
     </section>
-
 
 
     <!-- BANNER -->
@@ -112,7 +72,7 @@
 
     </article>
 
-    <nav class="filtrar-categoria">
+    <div class="filtrar-categoria">
 
         <p><strong>Filtrar por Categoria</strong></p>
         <section class="botoes-categoria">
@@ -151,14 +111,18 @@
         </section>
 
 
-    </nav>
+    </div>
 
     <main class="conteudo">
 
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+
+            </div>
+
             
             
             <section class="card-peito">
@@ -190,7 +154,11 @@
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/guitarra.webp" alt="Guitarra">
+
+            </div>
+
             
             
             <section class="card-peito">
@@ -205,7 +173,7 @@
                     
                     <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
 
-                    <p><strong>Rodrigo S.</strong></p>
+                    <p><strong>Jennifer Seixas</strong></p>
 
 
                 </div>
@@ -222,11 +190,15 @@
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/jbl.webp" alt="jbl">
+
+            </div>
+
             
             
             <section class="card-peito">
-                <h4>XBOX ONE 500GB</h4>
+                <h4>Jbl</h4>
                 <p><i class="fa-solid fa-circle-info"></i> Usado - Execelente estado</p>
                 <p><i class="fa-solid fa-location-dot"></i> São Paulo, SP</p>
                 <p><i class="fa-regular fa-clock"></i> Publicado há 2 dias</p>
@@ -237,7 +209,7 @@
                     
                     <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
 
-                    <p><strong>Rodrigo S.</strong></p>
+                    <p><strong>Fulana</strong></p>
 
 
                 </div>
@@ -254,11 +226,15 @@
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/pc.webp" alt="xbox">
+
+            </div>
+
             
             
             <section class="card-peito">
-                <h4>XBOX ONE 500GB</h4>
+                <h4>Pc operante</h4>
                 <p><i class="fa-solid fa-circle-info"></i> Usado - Execelente estado</p>
                 <p><i class="fa-solid fa-location-dot"></i> São Paulo, SP</p>
                 <p><i class="fa-regular fa-clock"></i> Publicado há 2 dias</p>
@@ -269,7 +245,7 @@
                     
                     <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
 
-                    <p><strong>Rodrigo S.</strong></p>
+                    <p><strong>Jaqueline</strong></p>
 
 
                 </div>
@@ -286,11 +262,15 @@
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/bicicleta.webp" alt="xbox">
+
+            </div>
+
             
             
             <section class="card-peito">
-                <h4>XBOX ONE 500GB</h4>
+                <h4>Bicicleta</h4>
                 <p><i class="fa-solid fa-circle-info"></i> Usado - Execelente estado</p>
                 <p><i class="fa-solid fa-location-dot"></i> São Paulo, SP</p>
                 <p><i class="fa-regular fa-clock"></i> Publicado há 2 dias</p>
@@ -301,7 +281,7 @@
                     
                     <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
 
-                    <p><strong>Rodrigo S.</strong></p>
+                    <p><strong>Rodriga.</strong></p>
 
 
                 </div>
@@ -318,11 +298,15 @@
 
         <article class="card">
             
-            <img src="/Projeto_MUV/doacoes_muv/img/xbox.png" alt="xbox">
+            <div class="card-img">
+                <img src="/Projeto_MUV/doacoes_muv/img/cabide.webp" alt="xbox">
+
+            </div>
+
             
             
             <section class="card-peito">
-                <h4>XBOX ONE 500GB</h4>
+                <h4>Cabides - pegar ou largar</h4>
                 <p><i class="fa-solid fa-circle-info"></i> Usado - Execelente estado</p>
                 <p><i class="fa-solid fa-location-dot"></i> São Paulo, SP</p>
                 <p><i class="fa-regular fa-clock"></i> Publicado há 2 dias</p>
@@ -330,10 +314,10 @@
             <section class="card-rodape">
 
                 <div class="avatar-nome">
-
+                    
                     <img src="https://ui-avatars.com/api/?name=João+Silva&background=random&size=150" alt="Foto de Perfil de João Silva" class="profile-img">
 
-                    <p><strong>Rodrigo S.</strong></p>
+                    <p><strong>Sanfona</strong></p>
 
 
                 </div>
@@ -451,8 +435,8 @@
                 <div class="rodape-1-part2-paragrafo">
                     <span><strong>Plataforma</strong></span><br>
                     <a href="#">Trocas</a><br>
-                    <a href="#">Permutas</a><br>
-                    <a href="#">Doações</a><br>
+                    <a href="/Projeto_MUV/permuta/permuta_muv.html">Permutas</a><br>
+                    <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html">Doações</a><br>
                     <a href="#">Como funciona</a>
                 </div>  
 
