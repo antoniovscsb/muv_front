@@ -299,6 +299,10 @@ nav i{
 
     box-shadow: var(--sombra);
     margin-bottom: 20px;
+
+    border-radius: 30px;
+
+   
 }
 
 .banner > img {
@@ -311,6 +315,8 @@ nav i{
     object-fit: cover;
 
     z-index: 0;
+
+   
 }
 
 
