@@ -14,94 +14,54 @@
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
+    <!-- CABEÇALHO -->
+    <header>
 
-    <header class="header">
+        <div class="topo">
 
-        <a href="#" class="header_logo" aria-label="Página inicial Troque Aqui!">
-            <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="Logo Troque Aqui!">
-        </a>
+            <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="Logo MUV" class="logo">
 
-        <div class="header_icones">
-
-            <a href="#" aria-label="Meu perfil">
-                <i class="fa-regular fa-circle-user"></i>
-            </a>
-
-            <a href="#" aria-label="Mensagens">
-                <i class="fa-brands fa-rocketchat"></i>
-            </a>
-
-            <a href="#" aria-label="Notificações">
-                <i class="fa-regular fa-bell"></i>
-            </a>
-
+            <div class="acoes">
+                <span><i class="fa-regular fa-circle-user"></i></span>
+                <span><i class="fa-regular fa-message"></i></span>
+                <span><i class="fa-regular fa-bell"></i></span>
+                
+            </div>
+            
         </div>
+<div class="acoes button">
+        <!-- MENU -->
+       <nav>
+            <a href="/Projeto_MUV/home/index_muv.html"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="#"><i class="fa-solid fa-layer-group"></i> Categorias</a>
+            <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
+            <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
+            <a href="/Projeto_MUV/permuta/permuta_muv.html"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
+            <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
+            <a href="/Projeto_MUV/sobre_muv/HTML/sobre.html"><i class="fa-solid fa-info"></i> Sobre</a>
+            <a href=""><i class="fa-solid fa-question"></i> Ajuda</a>
+            
+            
+        </nav>
+        <button> + Publicar anúncio</button>
+    
+    </div>   
+        
 
     </header>
 
 
-    <!-- =========================
-         MENU
-    ========================== -->
+    <!-- PESQUISA -->
+    <section class="pesquisa">
 
-    <nav class="menu" aria-label="Menu principal">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="menu_links">
+        <input
+            type="text"
+            placeholder="Buscar produtos ou serviços..."
+        >
 
-            <a href="#">
-                <i class="fa-solid fa-house"></i>
-                <span>Início</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-layer-group"></i>
-                <span>Categorias</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-mountain-city"></i>
-                <span>Anúncios</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-recycle"></i>
-                <span>Trocas</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <span>Doações</span>
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-question"></i>
-                <span>Ajuda</span>
-            </a>
-        </div>
-
-        <a href="#" class="btn_Pub_Anucio">
-            + Publicar Anúncio
-        </a>
-
-    </nav>
-
-
-    <!-- =========================
-         BUSCA
-    ========================== -->
-
-    <section class="menu_busca" aria-label="Pesquisa">
-
-        <input type="search" name="busca" id="busca_site" placeholder="Digite o nome do produto..."
-            aria-label="Digite o nome do produto">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
     </section>
-
 
 
     <!-- BANNER -->
@@ -112,7 +72,7 @@
 
     </article>
 
-    <nav class="filtrar-categoria">
+    <div class="filtrar-categoria">
 
         <p><strong>Filtrar por Categoria</strong></p>
         <section class="botoes-categoria">
@@ -151,7 +111,7 @@
         </section>
 
 
-    </nav>
+    </div>
 
     <main class="conteudo">
 
@@ -475,8 +435,8 @@
                 <div class="rodape-1-part2-paragrafo">
                     <span><strong>Plataforma</strong></span><br>
                     <a href="#">Trocas</a><br>
-                    <a href="#">Permutas</a><br>
-                    <a href="#">Doações</a><br>
+                    <a href="/Projeto_MUV/permuta/permuta_muv.html">Permutas</a><br>
+                    <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html">Doações</a><br>
                     <a href="#">Como funciona</a>
                 </div>  
 
