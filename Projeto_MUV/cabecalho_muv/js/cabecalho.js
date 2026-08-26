@@ -26,7 +26,7 @@ if (containerCabecalho) {
             <nav>
                 <a href="/Projeto_MUV/home/index_muv.html"><i class="fa-solid fa-house"></i> Início</a>
                 <a href="#"><i class="fa-solid fa-layer-group"></i> Categorias</a>
-                <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
+                <a href="/Projeto_MUV/gel_loc_muv/HTML/gel_loc.html"><i class="fa-solid fa-mountain-city"></i> Anúncios</a>
                 <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
                 <a href="/Projeto_MUV/permuta/permuta_muv.html"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
                 <a href="/Projeto_MUV/doacoes_muv/html/doacoes2.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
