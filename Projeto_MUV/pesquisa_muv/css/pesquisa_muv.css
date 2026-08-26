@@ -1,20 +1,27 @@
 :root {
+    --roxo: #4318c4;
+    --roxo-escuro: #2f0c99;
 
-    --cor-fundo: #f6f7fb;
-    --cor-texto: #333333;
-    --cor-principal: #4010B6;
-    --cor-principal-hover: #a786fb;
-    --cor-secundaria-1: #F59E0B;
-    --cor-borda: #dcdcdc;
-    --raio-borda: 16px;
-    --transicao: 0.3s ease;
-    --sombra-card: 0px 10px 30px rgba(0, 0, 0, 0.08);
-    --sombra-botao: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    --verde: #35b96e;
+    --verde-escuro: #249653;
 
-    --tempo: 0.4s;
-    --deslocamento: -4px;
+    --laranja: #ff9f00;
+    --laranja-escuro: #e68f00;
 
+    --azul: #3478ed;
+    --azul-escuro: #1f5fc7;
 
+    --branco: #ffffff;
+    --cinza-claro: #f4f5f9;
+    --cinza: #777777;
+    --cinza-borda: #dddddd;
+
+    --texto: #202231;
+
+    --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --sombra-hover: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+    --raio: 12px;
 }
 
 
@@ -31,29 +38,45 @@ body {
     color: var(--cor-texto);
 }
 
-/* PESQUISA */
-.pesquisa {
+/* =========================
+   PESQUISA
+========================= */
+
+.pesquisa{
     width: 500px;
+
     margin: 18px auto;
+
     display: flex;
+
     background-color: var(--branco);
+
     border: 2px solid var(--laranja);
+
     border-radius: 30px;
+
     overflow: hidden;
+
     transition: 0.3s;
 }
 
 .pesquisa:hover {
     box-shadow: var(--sombra);
+
     transform: scale(1.01);
 }
 
 .pesquisa input {
     width: 100%;
+
     border: none;
+
     outline: none;
+
     padding: 12px 20px;
+
     font-size: 18px;
+
     color: var(--texto);
 }
 
@@ -63,17 +86,22 @@ body {
 
 .pesquisa button {
     width: 60px;
+
     border: none;
+
     background-color: var(--branco);
+
     font-size: 22px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .pesquisa button:hover {
     background-color: var(--laranja);
-    color: white;
 }
+
 
 
 
