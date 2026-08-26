@@ -518,7 +518,7 @@ nav i{
    FOOTER
 ========================= */
 
-footer {
+/* footer {
     background-color: var(--verde);
 
     padding: 25px 50px;
@@ -558,7 +558,7 @@ footer img:hover {
     transform: translateY(-5px);
 
     color: var(--branco);
-}
+} */
 
 
 /* =========================
