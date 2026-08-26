@@ -99,12 +99,12 @@ header {
     font-size: 24px;
 }
 
-.acoes span {
+.acoes a,span {
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-.acoes span:hover {
+.acoes a,span:hover{
     color: var(--laranja-escuro);
     transform: translateY(-4px);
 }

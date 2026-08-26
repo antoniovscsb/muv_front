@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUV - Produtos perto de você</title>
+    <link rel="stylesheet" href="/Projeto_MUV/gel_loc_muv/CSS/gel_loc.css">
+    <!-- Ícones do FontAwesome para o cabeçalho -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <meta  name="description"  content="Troque Aqui! - Plataforma para trocar, doar e compartilhar conhecimento.">
-
-    <title>MUV</title>
-
-    <link
-        rel="stylesheet"
-        href="/Projeto_MUV/sobre_muv/CSS/sobre.css"
-    >
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
 </head>
-
 <body>
 
-   
-    
+    <!-- Cabeçalho -->
    
  <header>
 
@@ -43,6 +27,7 @@
             </div>
             
         </div>
+        
 <div class="acoes button">
         <!-- MENU -->
        <nav>
@@ -50,8 +35,8 @@
             <a href="#"><i class="fa-solid fa-layer-group"></i> Categorias</a>
             <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
             <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
-            <a href="#"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
-            <a href="#"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
+            <a href="/Projeto_MUV/permuta/permuta_muv.html"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
+            <a href="/Projeto_MUV/doacoes_muv/html/doacoes2.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
             <a href="/Projeto_MUV/sobre_muv/HTML/sobre.html"><i class="fa-solid fa-info"></i> Sobre</a>
             <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>  
             
@@ -62,7 +47,7 @@
 
     </header>
     
-    <!-- PESQUISA -->
+    <!-- PESQUISA 
     <section class="pesquisa">
 
         <input
@@ -72,112 +57,81 @@
 
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
-    </section>
+    </section>-->
 
 
-
-    
-
-    <main>
-
-        <section class="banner">
-
-            <img
-                src="/Projeto_MUV/sobre_muv/img/img_banner s info.png"
-                alt="foto"
-            >
-
-            <div class="banner-conteudo">
-
-                <span class="banner-nome">
-                     MUV
-
-                </span>
-
-                <p class="banner_relato">
-
-                    <strong>O MUV</strong>
-                    foi criado quando amigos resolveram
-                    ajudar<br> pessoas a
-
-                    <strong>
-                        trocar, doar e compartilhar conhecimento<br>
-                    </strong>
-
-                    de modo sustentável, promovendo uma
-                    ação de<br> benefícios mútuos dentro da
-                    comunidade.
-
-                </p>
-
+    <!-- Conteúdo Principal -->
+    <main class="main-container">
+        
+        <!-- Seção de Busca -->
+        <section class="search-section">
+            <div class="search-header">
+                <h1>Produtos perto de você</h1>
+                <p>Explore oportunidades próximas e encontre algo interessante.</p>
+            </div>
+            
+            <div class="search-inputs">
+                <input type="text" placeholder="Digite aqui oque vc procura..." class="input-text">
+                <select class="input-select">
+                    <option>Até 5 Km</option>
+                    <option>Até 10 Km</option>
+                    <option>Até 20 Km</option>
+                </select>
             </div>
 
+            <div class="search-filters">
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Todos</button>
+                    <button class="filter-btn">Troca</button>
+                    <button class="filter-btn">Doação</button>
+                    <button class="filter-btn">Permuta</button>
+                </div>
+                <button class="btn-location">Usar minha localização</button>
+            </div>
+        </section>
 
-           
-
-            <div class="cards">
-
-                <article class="card">
-
-                     <i class="fa-regular fa-gem"></i>
-
-                    <span class="card-tag">
-                        Nosso diferencial
-                    </span>
-
-                    <p>
-                        Conectamos pessoas para facilitar
-                        trocas e doações de produtos,
-                        incentivando o consumo consciente
-                        e sustentável.
-                    </p>
-
-                </article>
-
-
-                <article class="card">
-
-                     <i class="fa-regular fa-star"></i>
-
-                    <span class="card-tag">
-                        Nossas qualidades
-                    </span>
-
-                    <p>
-                        Valorizamos a colaboração,
-                        a sustentabilidade, a confiança
-                        e o benefício mútuo entre os
-                        participantes da comunidade.
-                    </p>
-
-                </article>
-
-
-                <article class="card">
-
-                 <i class="fa-solid fa-gift"></i>
-
-                    <span class="card-tag">
-                        Para você
-                    </span>
-
-                    <p>
-                        Encontre produtos, publique seus
-                        anúncios e descubra novas
-                        possibilidades através das trocas
-                        e doações.
-                    </p>
-
-                </article>
-
+        <!-- Seção de Resultados (Mapa e Lista) -->
+        <section class="results-section">
+            <div class="map-box">
+                <!-- Simulando o mapa com um iframe ou fundo -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15998.7!2d-48.45!3d-1.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMjInMTIuMCJTIDQ4wrAyNyczMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1650000000000" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
             </div>
 
+            <div class="results-box">
+                <h2>Resultados</h2>
+                
+                <div class="result-item">
+                    <span class="distance">A 3km</span>
+                    <span class="description">Troca: Bicicleta aro 26.</span>
+                </div>
+
+                <div class="result-item">
+                    <span class="distance">A 4km</span>
+                    <span class="description">Doação: Computador em bom estado</span>
+                </div>
+
+                <div class="result-item">
+                    <span class="distance">A 4.2km</span>
+                    <span class="description">Permuta: Aula de violão</span>
+                </div>
+
+                <div class="result-item">
+                    <span class="distance">A 4.8km</span>
+                    <span class="description">Doação: 200 telhas plan</span>
+                </div>
+            </div>
         </section>
 
     </main>
 
-   
-   
+    
     <footer class="rodape">
 
         <article class="rodape-1">
@@ -231,7 +185,5 @@
 
     </footer>
 
-
 </body>
-
 </html>
