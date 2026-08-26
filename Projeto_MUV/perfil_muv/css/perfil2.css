@@ -30,7 +30,7 @@ body {
 }
 
 /* Cabeçalho */
-.cabecalho {
+/* .cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .logo img {
-    width: 120px; /* Melhor controle de largura do que porcentagem em logos */
+    width: 120px; 
     max-width: 100%;
     display: block;
 }
@@ -51,7 +51,7 @@ body {
     display: flex;
     gap: 15px;
     cursor: pointer;
-}
+} */
 
 /* Conteúdo Principal */
 .conteudo {
