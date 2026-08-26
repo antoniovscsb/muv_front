@@ -24,40 +24,55 @@ header {
 }
 
 /* =========================
-   AÇÕES DO TOPO E BOTÃO
+   AÇÕES DO TOPO (ÍCONES)
 ========================= */
 
 .acoes {
     display: flex;
     align-items: center;
-    gap: 20000px;
-    color: var(--branco, #ffffff);
-    font-size: 24px;
+    justify-content: center;
+    gap: 8px; /* Espaço reduzido entre os ícones */
 }
 
 .acoes a {
     color: inherit;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;  /* Largura menor e controlada */
+    height: 38px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.acoes a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .acoes span {
     cursor: pointer;
-    transition: transform 0.3s;
+    font-size: 20px; /* Ícones mais compactos */
+    color: var(--branco, #ffffff);
+    transition: transform 0.3s, color 0.3s;
 }
 
 .acoes span:hover {
     color: var(--laranja-escuro, #d97706);
-    transform: translateY(-4px);
+    transform: translateY(-2px);
 }
 
-/* Container que alinha o menu à esquerda e o botão à direita */
+/* =========================
+   CONTAINER DO MENU E BOTÃO
+========================= */
+
 .acoes-button-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Joga o menu para um lado e o botão para o outro */
+    justify-content: space-between;
     gap: 5%;
     margin-top: 20px;
-    margin-left: 8%;
+    width: 100%;
 }
 
 .btn-publicar {
@@ -68,7 +83,7 @@ header {
     font-weight: bold;
     color: #333333;
     cursor: pointer;
-    white-space: nowrap; /* Evita que o texto quebre em duas linhas */
+    white-space: nowrap;
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -83,7 +98,7 @@ header {
 ========================= */
 
 nav {
-    width: 100%; /* Ocupa o espaço disponível ao lado do botão */
+    flex: 1; /* Faz o menu ocupar o espaço disponível empurrando o botão para a direita */
     margin: 0;
     border: 2px solid var(--cor-secundaria-1, #F59E0B);
     border-radius: 25px;
@@ -91,6 +106,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 8px 15px;
+    margin-left: 8%;
 }
 
 nav a {
@@ -120,7 +136,6 @@ nav i {
         padding: 15px 20px;
     }
     
-    /* Em telas médias/menores, se faltar espaço, empilha o botão embaixo do menu de novo */
     .acoes-button-container {
         flex-direction: column;
         align-items: stretch;
@@ -142,9 +157,8 @@ nav i {
     }
 
     .acoes {
-        gap: 15px;
-        font-size: 20px;
-        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 18px;
         justify-content: center;
     }
 
