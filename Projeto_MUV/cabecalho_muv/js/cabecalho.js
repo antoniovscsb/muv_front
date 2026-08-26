@@ -29,7 +29,7 @@ if (containerCabecalho) {
                 <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
                 <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
                 <a href="/Projeto_MUV/permuta/permuta_muv.html"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
-                <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
+                <a href="/Projeto_MUV/doacoes_muv/html/doacoes2.html"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
                 <a href="/Projeto_MUV/sobre_muv/HTML/sobre.html"><i class="fa-solid fa-info"></i> Sobre</a>
                 <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
             </nav>
