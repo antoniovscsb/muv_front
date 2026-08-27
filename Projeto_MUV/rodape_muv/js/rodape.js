@@ -18,19 +18,13 @@ rodape.innerHTML =`
             <div class="rodape-1-part2">
                 <div class="rodape-1-part2-paragrafo">
                     <span><strong>Plataforma</strong></span><br>
-                    <a href="#">Trocas</a><br>
+                    <a href="/Projeto_MUV/trocas/trocas.html">Trocas</a><br>
                     <a href="/Projeto_MUV/permuta/permuta_muv.html">Permutas</a><br>
-                    <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html">Doações</a><br>
-                    <a href="#">Como funciona</a>
+                    <a href="/Projeto_MUV/doacoes_muv/html/doacoes2.html">Doações</a><br>
+                    <a href="/Projeto_MUV/sobre_muv/HTML/sobre.html">Como funciona</a>
                 </div>  
 
-                <div class="rodape-1-part2-paragrafo">
-                    <span><strong>Suporte</strong></span><br>
-                    <a href="#">Central de Ajuda</a><br>
-                    <a href="#">Segurança</a><br>
-                    <a href="#">Termos de uso</a><br>
-                    <a href="#">Privacidade</a>
-                </div>
+
                 
                 <div class="rodape-1-part2-paragrafo">
                     <span><strong>Fale Conosco</strong></span><br>
