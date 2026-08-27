@@ -1,6 +1,8 @@
 :root {
+
     --roxo: #4318c4;
     --roxo-escuro: #2f0c99;
+    --roxo-claro: #efe5ff;
 
     --verde: #35b96e;
     --verde-escuro: #249653;
@@ -12,32 +14,57 @@
     --azul-escuro: #1f5fc7;
 
     --branco: #ffffff;
+
     --cinza-claro: #f4f5f9;
     --cinza: #777777;
-    --cinza-borda: #dddddd;
+    --cinza-borda: #e6e4ea;
 
     --texto: #202231;
 
-    --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
-    --sombra-hover: 0 10px 20px rgba(0, 0, 0, 0.20);
+    --sombra:
+        0 4px 10px rgba(0, 0, 0, 0.12);
 
-    --raio: 12px;
+    --sombra-card:
+        0 5px 16px rgba(30, 20, 60, 0.08);
+
+    --sombra-hover:
+        0 12px 26px rgba(30, 20, 60, 0.14);
+
+    --raio: 14px;
+
+    --transicao: 0.3s ease;
 }
 
 
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 * {
+
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
+
 html {
+
     scroll-behavior: smooth;
 }
 
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cinza-claro);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color:
+        var(--cinza-claro);
+
     color: var(--texto);
 }
 
@@ -47,92 +74,139 @@ body {
 ========================= */
 
 header {
+
     background-color: var(--roxo);
-    padding: 20px 50px 12px;
+
+    padding:
+        20px
+        50px
+        12px;
 }
 
+
 .topo {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
+
 .logo {
+
     width: 200px;
-    transition: transform 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.05);
-}
-
-.acoes button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    background-color: var(--cor-laranja);
-    color: #333;
-     border-radius: var(--borda);
-     font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    white-space: nowrap;
-     cursor: pointer;
 
     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform var(--transicao);
 }
 
-/* =========================    ''  
+
+.logo:hover {
+
+    transform:
+        scale(1.05);
+}
+
+
+/* =========================
    AÇÕES DO TOPO
 ========================= */
 
 .acoes {
+
     display: flex;
+
     align-items: center;
+
     gap: 20px;
+
     color: var(--branco);
+
     font-size: 24px;
 }
 
-.acoes a,span {
+
+/* IMPORTANTE:
+   antes estava .acoes a,span
+   isso pegava TODOS os spans do site */
+
+.acoes a,
+.acoes span {
+
+    color: var(--branco);
+
     cursor: pointer;
-    transition: transform 0.3s;
+
+    transition:
+        color var(--transicao),
+        transform var(--transicao);
 }
 
-.acoes a,span:hover{
-    color: var(--laranja-escuro);
-    transform: translateY(-4px);
+
+.acoes a:hover,
+.acoes span:hover {
+
+    color:
+        var(--laranja);
+
+    transform:
+        translateY(-4px);
 }
+
 
 .acoes button {
-    background-color: var(--laranja);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        12px
+        22px;
+
+    background-color:
+        var(--laranja);
+
+    color: #333333;
 
     border: none;
 
-    padding: 12px 22px;
-
     border-radius: 25px;
+
+    font-size: 15px;
 
     font-weight: bold;
 
+    text-decoration: none;
+
+    white-space: nowrap;
+
     cursor: pointer;
 
-    transition: 0.3s;
-
-    margin-top: 25px;
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
 }
 
+
 .acoes button:hover {
-    background-color: var(--laranja-escuro);
 
-    transform: scale(1.05);
+    background-color:
+        var(--laranja-escuro);
 
-    box-shadow: var(--sombra);
+    color: var(--branco);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        var(--sombra);
 }
 
 
@@ -141,11 +215,18 @@ header {
 ========================= */
 
 nav {
+
     width: 65%;
 
-    margin: 25px auto 0;
+    margin:
+        25px
+        auto
+        0;
 
-    border: 2px solid var(--laranja);
+    border:
+        2px
+        solid
+        var(--laranja);
 
     border-radius: 25px;
 
@@ -155,103 +236,158 @@ nav {
 
     align-items: center;
 
-    padding: 8px 15px;
+    padding:
+        8px
+        15px;
 }
 
+
 nav a {
+
     color: var(--branco);
 
     text-decoration: none;
 
     font-size: 14px;
 
-    padding: 6px 12px;
+    padding:
+        6px
+        12px;
 
     border-radius: 20px;
 
-    transition: 0.3s;
+    transition:
+        background-color var(--transicao),
+        color var(--transicao),
+        transform var(--transicao);
 }
+
 
 nav a:hover {
-    color: var(--laranja);
-    background-color: rgba(255, 255, 255, 0.12);
 
+    color:
+        var(--laranja);
 
-    transform: translateY(-2px);
+    background-color:
+        rgba(255, 255, 255, 0.12);
 
-     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-
+    transform:
+        translateY(-2px);
 }
 
-nav i{
-    color: var(--laranja);
+
+nav i {
+
+    color:
+        var(--laranja);
 }
+
 
 /* =========================
    PESQUISA
 ========================= */
 
-.pesquisa{
+.pesquisa {
+
     width: 500px;
 
-    margin: 18px auto;
+    margin:
+        18px
+        auto;
 
     display: flex;
 
-    background-color: var(--branco);
+    background-color:
+        var(--branco);
 
-    border: 2px solid var(--laranja);
+    border:
+        2px
+        solid
+        var(--laranja);
 
     border-radius: 30px;
 
     overflow: hidden;
 
-    transition: 0.3s;
+    transition:
+        box-shadow var(--transicao),
+        transform var(--transicao);
 }
+
 
 .pesquisa:hover {
-    box-shadow: var(--sombra);
 
-    transform: scale(1.01);
+    box-shadow:
+        var(--sombra);
+
+    transform:
+        scale(1.01);
 }
 
+
+.pesquisa:focus-within {
+
+    box-shadow:
+        0 0 0 4px
+        rgba(255, 159, 0, 0.15);
+}
+
+
 .pesquisa input {
+
     width: 100%;
 
     border: none;
 
     outline: none;
 
-    padding: 12px 20px;
+    padding:
+        12px
+        20px;
 
     font-size: 18px;
 
-    color: var(--texto);
+    color:
+        var(--texto);
 }
+
 
 .pesquisa input::placeholder {
-    color: var(--laranja);
+
+    color:
+        var(--laranja);
 }
 
+
 .pesquisa button {
+
     width: 60px;
 
     border: none;
 
-    background-color: var(--branco);
+    background-color:
+        var(--branco);
+
+    color:
+        var(--laranja);
 
     font-size: 22px;
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition:
+        background-color var(--transicao),
+        color var(--transicao);
 }
 
+
 .pesquisa button:hover {
-    background-color: var(--laranja);
+
+    background-color:
+        var(--laranja);
+
+    color:
+        var(--branco);
 }
 
 
@@ -261,24 +397,45 @@ nav i{
 
 .banner {
     width: 82%;
-
     margin: 25px auto 35px;
+
+    position: relative;
 }
 
 .banner img {
     width: 100%;
-
     display: block;
 
     border-radius: 10px;
-
-    transition: 0.4s;
 }
 
-.banner img:hover {
-    transform: scale(1.01);
 
-    box-shadow: var(--sombra-hover);
+/* BOTÃO CLICÁVEL SOBRE A IMAGEM */
+
+.botao-banner {
+    position: absolute;
+
+    left: 7.3%;
+    top: 68.5%;
+
+    width: 15%;
+    height: 7%;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.botao-banner:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 5px 15px rgba(64, 16, 182, 0.25);
 }
 
 
@@ -287,11 +444,15 @@ nav i{
 ========================= */
 
 .secao {
+
     margin-top: 30px;
 }
 
+
 .titulo {
-    color: var(--branco);
+
+    color:
+        var(--branco);
 
     text-align: center;
 
@@ -310,51 +471,102 @@ nav i{
 ========================= */
 
 .trocas {
-    background-color: var(--verde);
+
+    background-color:
+        var(--verde);
 }
+
 
 .permutas {
-    background-color: var(--laranja);
+
+    background-color:
+        var(--laranja);
 }
+
 
 .doacoes {
-    background-color: var(--azul);
+
+    background-color:
+        var(--azul);
 }
 
 
-/* =========================
+/* =================================================
    CARDS
-========================= */
+   Novo estilo inspirado na página de Permutas
+================================================= */
 
 .cards {
-    width: 90%;
 
-    margin: 45px auto;
+    width: 88%;
+
+    margin:
+        38px
+        auto
+        28px;
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
 
-    gap: 35px;
+    gap: 24px;
 }
+
+
+/* CARD */
 
 .card {
-    background-color: var(--branco);
 
-    border-radius: var(--raio);
+    min-width: 0;
 
-    padding: 12px;
+    padding: 0;
 
-    box-shadow: var(--sombra);
+    overflow: hidden;
 
-    transition: transform 0.3s,
-                box-shadow 0.3s;
+    display: flex;
+
+    flex-direction: column;
+
+    background-color:
+        var(--branco);
+
+    border:
+        1px
+        solid
+        var(--cinza-borda);
+
+    border-radius:
+        var(--raio);
+
+    box-shadow:
+        var(--sombra-card);
+
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao),
+        border-color var(--transicao);
 }
 
-.card:hover {
-    transform: translateY(-10px);
 
-    box-shadow: var(--sombra-hover);
+.card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(
+            64,
+            16,
+            182,
+            0.20
+        );
+
+    box-shadow:
+        var(--sombra-hover);
 }
 
 
@@ -362,43 +574,117 @@ nav i{
    IMAGEM DO CARD
 ========================= */
 
-.card img {
+/*
+No HTML novo a imagem está dentro de:
+
+<div class="card-imagem">
+    <img>
+</div>
+*/
+
+.card-imagem {
+
     width: 100%;
 
-    height: 180px;
+    height: 190px;
+
+    overflow: hidden;
+
+    background-color:
+        #eeeeF2;
+}
+
+
+.card-imagem img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 0;
 
-    transition: transform 0.4s;
+    transition:
+        transform 0.4s ease;
 }
 
-.card:hover img {
-    transform: scale(1.03);
+
+.card:hover .card-imagem img {
+
+    transform:
+        scale(1.035);
 }
 
 
 /* =========================
-   TEXTO DOS CARDS
+   CONTEÚDO DO CARD
 ========================= */
 
-.card h3 {
-    margin-top: 15px;
+.card-conteudo {
 
-    margin-bottom: 12px;
+    flex: 1;
+
+    padding:
+        15px
+        16px
+        12px;
+}
+
+
+.card-conteudo h3 {
+
+    min-height: 35px;
+
+    margin:
+        0
+        0
+        11px;
+
+    color:
+        var(--texto);
 
     font-size: 14px;
 
-    color: var(--texto);
+    font-weight: 700;
+
+    line-height: 1.2;
 }
 
-.card p {
-    font-size: 12px;
 
-    margin-bottom: 4px;
+.card-conteudo p {
 
-    color: var(--cinza);
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 6px;
+
+    color:
+        var(--cinza);
+
+    font-size: 11px;
+
+    line-height: 1.25;
+}
+
+
+/* ÍCONES */
+
+.card-conteudo p i {
+
+    width: 14px;
+
+    flex-shrink: 0;
+
+    text-align: center;
+
+    color:
+        var(--roxo);
 }
 
 
@@ -407,23 +693,107 @@ nav i{
 ========================= */
 
 .rodape-card {
-    border-top: 1px solid var(--cinza-borda);
 
-    margin-top: 20px;
+    min-height: 52px;
 
-    padding-top: 15px;
+    margin-top: 0;
+
+    padding:
+        10px
+        14px;
 
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
+
+    gap: 10px;
+
+    border-top:
+        1px
+        solid
+        var(--cinza-borda);
+
+    background-color:
+        #fdfdfe;
 }
 
-.rodape-card span {
-    font-size: 11px;
 
-    color: var(--cinza);
+/* =========================
+   USUÁRIO DO CARD
+========================= */
+
+.usuario-card {
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* CÍRCULO COM INICIAIS */
+
+.avatar-card {
+
+    width: 28px;
+
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color:
+        var(--roxo-claro);
+
+    color:
+        var(--roxo);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    transition:
+        transform var(--transicao),
+        background-color var(--transicao);
+}
+
+
+.usuario-card:hover .avatar-card {
+
+    transform:
+        scale(1.08);
+
+    background-color:
+        #e5d4ff;
+}
+
+
+.usuario-card strong {
+
+    overflow: hidden;
+
+    color:
+        var(--texto);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
 }
 
 
@@ -432,58 +802,104 @@ nav i{
 ========================= */
 
 .rodape-card button {
+
+    flex-shrink: 0;
+
+    padding:
+        7px
+        12px;
+
     border: none;
 
-    color: var(--branco);
+    border-radius: 7px;
 
-    padding: 8px 12px;
+    color:
+        var(--branco);
 
-    border-radius: 8px;
+    font-family: inherit;
 
-    font-size: 11px;
+    font-size: 9px;
+
+    font-weight: 600;
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition:
+        background-color var(--transicao),
+        transform var(--transicao),
+        box-shadow var(--transicao);
 }
 
 
-/* TROCA */
+.rodape-card button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 11px
+        rgba(0, 0, 0, 0.14);
+}
+
+
+.rodape-card button:active {
+
+    transform:
+        scale(0.96);
+}
+
+
+/* =========================
+   BOTÃO TROCA
+========================= */
 
 .btn-troca {
-    background-color: var(--verde);
+
+    background-color:
+        var(--verde);
 }
+
 
 .btn-troca:hover {
-    background-color: var(--verde-escuro);
 
-    transform: scale(1.08);
+    background-color:
+        var(--verde-escuro);
 }
 
 
-/* PERMUTA */
+/* =========================
+   BOTÃO PERMUTA
+========================= */
 
 .btn-permuta {
-    background-color: var(--laranja);
+
+    background-color:
+        var(--laranja);
 }
+
 
 .btn-permuta:hover {
-    background-color: var(--laranja-escuro);
 
-    transform: scale(1.08);
+    background-color:
+        var(--laranja-escuro);
 }
 
 
-/* DOAÇÃO */
+/* =========================
+   BOTÃO DOAÇÃO
+========================= */
 
 .btn-doacao {
-    background-color: var(--azul);
+
+    background-color:
+        var(--azul);
 }
 
-.btn-doacao:hover {
-    background-color: var(--azul-escuro);
 
-    transform: scale(1.08);
+.btn-doacao:hover {
+
+    background-color:
+        var(--azul-escuro);
 }
 
 
@@ -492,112 +908,109 @@ nav i{
 ========================= */
 
 .ver-mais {
-    width: 90%;
 
-    margin: 0 auto 35px;
+    width: 88%;
+
+    margin:
+        0
+        auto
+        35px;
 
     text-align: right;
+    text-decoration: none;
 
-    font-size: 12px;
+    color:
+        var(--cinza);
 
-    font-weight: bold;
+    font-size: 10px;
+
+    font-weight: 600;
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition:
+        color var(--transicao),
+        transform var(--transicao);
 }
+
 
 .ver-mais:hover {
-    color: var(--roxo);
 
-    transform: translateX(-5px);
+    color:
+        var(--roxo);
+
+    transform:
+        translateX(-5px);
 }
-
-
-/* =========================
-   FOOTER
-========================= */
-
-/* footer {
-    background-color: var(--verde);
-
-    padding: 25px 50px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-footer img {
-    width: 170px;
-
-    transition: transform 0.3s;
-}
-
-footer img:hover {
-    transform: scale(1.05);
-}
-
-.redes {
-    display: flex;
-
-    gap: 20px;
-
-    font-weight: bold;
-}
-
-.redes span {
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.redes span:hover {
-    transform: translateY(-5px);
-
-    color: var(--branco);
-} */
 
 
 /* =========================
    RESPONSIVIDADE
 ========================= */
 
+
+/* TABLET */
+
 @media (max-width: 1000px) {
 
     nav {
+
         width: 90%;
     }
+
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+
+        width: 92%;
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
     }
+
+
+    .card-imagem {
+
+        height: 220px;
+    }
+
 
     .banner {
+
         width: 90%;
     }
+
 }
 
+
+/* CELULAR */
 
 @media (max-width: 650px) {
 
     header {
+
         padding: 15px;
     }
 
+
     .topo {
+
         flex-direction: column;
 
         gap: 20px;
     }
 
+
     .logo {
+
         width: 150px;
     }
 
+
     nav {
+
         width: 100%;
 
         flex-wrap: wrap;
@@ -605,29 +1018,87 @@ footer img:hover {
         gap: 8px;
     }
 
+
     .pesquisa {
+
         width: 90%;
     }
 
+
     .banner {
+
         width: 95%;
     }
 
+
     .cards {
+
         width: 90%;
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
-        gap: 25px;
+        gap: 22px;
     }
 
+
+    .card-imagem {
+
+        height: 230px;
+    }
+
+
+    .card-conteudo h3 {
+
+        min-height: auto;
+
+        font-size: 16px;
+    }
+
+
+    .card-conteudo p {
+
+        font-size: 12px;
+    }
+
+
+    .rodape-card {
+
+        padding:
+            12px
+            14px;
+    }
+
+
+    .avatar-card {
+
+        width: 31px;
+
+        height: 31px;
+
+        font-size: 10px;
+    }
+
+
+    .usuario-card strong {
+
+        font-size: 11px;
+    }
+
+
+    .rodape-card button {
+
+        font-size: 10px;
+
+        padding:
+            8px
+            13px;
+    }
+
+
     .titulo {
+
         font-size: 25px;
     }
 
-    footer {
-        flex-direction: column;
-
-        gap: 20px;
-    }
 }

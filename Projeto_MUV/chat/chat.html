@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MUV - Chat</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+
+    <!-- COMPONENTES DO PROJETO -->
+    <link rel="stylesheet" href="/Projeto_MUV/cabecalho_muv/css/cabecalho.css">
+    <link rel="stylesheet" href="/Projeto_MUV/rodape_muv/css/rodape.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <div id="cabecalho"></div>
+
+
+    <main class="chat-container">
+
+        <!-- TÍTULO -->
+        <section class="chat-topo">
+
+            <div>
+                <span class="etiqueta">
+                    <i class="fa-regular fa-comments"></i>
+                    CONVERSAS
+                </span>
+
+                <h1>Chat MUV</h1>
+
+                <p>
+                    Converse com outros usuários e combine os detalhes
+                    da sua troca, permuta ou doação.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA PRINCIPAL DO CHAT -->
+        <section class="chat-layout">
+
+
+            <!-- =========================
+                 LISTA DE CONVERSAS
+            ========================== -->
+
+            <aside class="conversas">
+
+                <div class="conversas-topo">
+
+                    <h2>Mensagens</h2>
+
+                    <button aria-label="Nova conversa">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="buscar-conversa">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar conversa..."
+                    >
+
+                </div>
+
+
+                <div class="filtros-chat">
+
+                    <button class="ativo">
+                        Todas
+                    </button>
+
+                    <button>
+                        Não lidas
+                    </button>
+
+                </div>
+
+
+                <div class="lista-conversas">
+
+
+                    <!-- CONVERSA 1 -->
+
+                    <article class="conversa-item ativo">
+
+                        <div class="avatar">
+                            VI
+                        </div>
+
+                        <div class="conversa-info">
+
+                            <div class="conversa-linha">
+
+                                <strong>
+                                    Victor Almeida
+                                </strong>
+
+                                <span>
+                                    14:32
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Perfeito! Podemos marcar amanhã...
+                            </p>
+
+                            <small class="tipo troca">
+                                Troca
+                            </small>
+
+                        </div>
+
+                        <span class="nao-lida">
+                            2
+                        </span>
+
+                    </article>
+
+
+                    <!-- CONVERSA 2 -->
+
+                    <article class="conversa-item">
+
+                        <div class="avatar">
+                            CA
+                        </div>
+
+                        <div class="conversa-info">
+
+                            <div class="conversa-linha">
+
+                                <strong>
+                                    Camila V.
+                                </strong>
+
+                                <span>
+                                    12:10
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Tenho interesse na sua aula...
+                            </p>
+
+                            <small class="tipo permuta">
+                                Permuta
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONVERSA 3 -->
+
+                    <article class="conversa-item">
+
+                        <div class="avatar">
+                            MA
+                        </div>
+
+                        <div class="conversa-info">
+
+                            <div class="conversa-linha">
+
+                                <strong>
+                                    Mariana Lima
+                                </strong>
+
+                                <span>
+                                    Ontem
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Ainda está disponível para doação?
+                            </p>
+
+                            <small class="tipo doacao">
+                                Doação
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONVERSA 4 -->
+
+                    <article class="conversa-item">
+
+                        <div class="avatar">
+                            RO
+                        </div>
+
+                        <div class="conversa-info">
+
+                            <div class="conversa-linha">
+
+                                <strong>
+                                    Rodrigo S.
+                                </strong>
+
+                                <span>
+                                    Ontem
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Posso oferecer um tablet...
+                            </p>
+
+                            <small class="tipo troca">
+                                Troca
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONVERSA 5 -->
+
+                    <article class="conversa-item">
+
+                        <div class="avatar">
+                            GU
+                        </div>
+
+                        <div class="conversa-info">
+
+                            <div class="conversa-linha">
+
+                                <strong>
+                                    Gustavo B.
+                                </strong>
+
+                                <span>
+                                    25/08
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Qual horário fica melhor para você?
+                            </p>
+
+                            <small class="tipo permuta">
+                                Permuta
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </aside>
+
+
+            <!-- =========================
+                 CONVERSA ATIVA
+            ========================== -->
+
+            <section class="chat-principal">
+
+
+                <!-- CABEÇALHO DA CONVERSA -->
+
+                <header class="conversa-header">
+
+                    <div class="usuario-header">
+
+                        <div class="avatar avatar-grande">
+                            VB
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Victor Braga
+                            </h2>
+
+                            <p>
+                                <span class="online"></span>
+                                Online agora
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conversa-acoes">
+
+                        <button
+                            aria-label="Ver perfil"
+                            title="Ver perfil"
+                        >
+                            <i class="fa-regular fa-user"></i>
+                        </button>
+
+                        <button
+                            aria-label="Mais opções"
+                            title="Mais opções"
+                        >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+
+                    </div>
+
+                </header>
+
+
+                <!-- CONTEXTO DA NEGOCIAÇÃO -->
+
+                <div class="negociacao-aviso">
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+
+                    <div>
+
+                        <strong>
+                            Negociação em andamento
+                        </strong>
+
+                        <p>
+                            Notebook Macbook Air ↔ Bicicleta fibra de carbono
+                        </p>
+
+                    </div>
+
+                    <a href="#">
+                        Ver detalhes
+                    </a>
+
+                </div>
+
+
+                <!-- MENSAGENS -->
+
+                <div class="mensagens">
+
+
+                    <div class="data-chat">
+                        Hoje
+                    </div>
+
+
+                    <div class="mensagem recebida">
+
+                        <div class="avatar mensagem-avatar">
+                            VI
+                        </div>
+
+                        <div class="balao">
+
+                            <p>
+                                Olá! Vi seu anúncio do Macbook Air.
+                                Ainda está disponível para troca?
+                            </p>
+
+                            <span>
+                                14:20
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mensagem enviada">
+
+                        <div class="balao">
+
+                            <p>
+                                Oi, Victor! Está sim.
+                                Vi que você anunciou uma bicicleta,
+                                seria ela que você quer oferecer?
+                            </p>
+
+                            <span>
+                                14:24
+                                <i class="fa-solid fa-check-double"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mensagem recebida">
+
+                        <div class="avatar mensagem-avatar">
+                            VI
+                        </div>
+
+                        <div class="balao">
+
+                            <p>
+                                Isso mesmo. Ela está em ótimo estado,
+                                revisei recentemente e tenho interesse
+                                no notebook.
+                            </p>
+
+                            <span>
+                                14:27
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mensagem recebida">
+
+                        <div class="avatar mensagem-avatar">
+                            VI
+                        </div>
+
+                        <div class="balao">
+
+                            <p>
+                                Podemos marcar em um local público
+                                para conferir os dois itens?
+                            </p>
+
+                            <span>
+                                14:28
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mensagem enviada">
+
+                        <div class="balao">
+
+                            <p>
+                                Perfeito! Shopping Boulevard funciona
+                                para você amanhã às 14h30?
+                            </p>
+
+                            <span>
+                                14:30
+                                <i class="fa-solid fa-check-double"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mensagem recebida">
+
+                        <div class="avatar mensagem-avatar">
+                            VI
+                        </div>
+
+                        <div class="balao">
+
+                            <p>
+                                Funciona sim 👍
+                            </p>
+
+                            <span>
+                                14:32
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- CAMPO DE ENVIO -->
+
+                <footer class="enviar-mensagem">
+
+                    <button
+                        class="btn-anexo"
+                        aria-label="Anexar arquivo"
+                    >
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+
+                    <div class="campo-mensagem">
+
+                        <textarea
+                            rows="1"
+                            placeholder="Digite uma mensagem..."
+                        ></textarea>
+
+                        <button
+                            class="btn-emoji"
+                            aria-label="Emoji"
+                        >
+                            <i class="fa-regular fa-face-smile"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn-enviar">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </footer>
+
+
+            </section>
+
+
+            <!-- =========================
+                 PAINEL DA NEGOCIAÇÃO
+            ========================== -->
+
+            <aside class="negociacao">
+
+
+                <div class="negociacao-topo">
+
+                    <h2>
+                        Detalhes da troca
+                    </h2>
+
+                    <span class="status">
+                        Em negociação
+                    </span>
+
+                </div>
+
+
+                <div class="item-negociacao">
+
+                    <span class="item-label">
+                        Você oferece
+                    </span>
+
+                    <div class="produto">
+
+                        <div class="produto-imagem">
+
+                            <i class="fa-solid fa-laptop"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Notebook Macbook Air
+                            </strong>
+
+                            <p>
+                                Valor estimado:
+                                R$ 2.000,00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="icone-troca">
+
+                    <span></span>
+
+                    <i class="fa-solid fa-up-down"></i>
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="item-negociacao">
+
+                    <span class="item-label">
+                        Victor oferece
+                    </span>
+
+                    <div class="produto">
+
+                        <div class="produto-imagem bicicleta">
+
+                            <i class="fa-solid fa-bicycle"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Bicicleta fibra de carbono
+                            </strong>
+
+                            <p>
+                                Valor estimado:
+                                R$ 1.800,00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="seguranca">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+
+                        <strong>
+                            Troque com segurança
+                        </strong>
+
+                        <p>
+                            Prefira locais públicos e confira
+                            o item antes de concluir a troca.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="/Projeto_MUV/marcar negociação/negociacao.html"
+                    class="btn-agendar"
+                >
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Agendar encontro
+
+                </a>
+
+
+                <button class="btn-encerrar">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                    Encerrar negociação
+
+                </button>
+
+
+            </aside>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <div id="rodape"></div>
+
+
+    <!-- JS DOS COMPONENTES -->
+    <script src="/Projeto_MUV/cabecalho_muv/js/cabecalho.js"></script>
+    <script src="/Projeto_MUV/rodape_muv/js/rodape.js"></script>
+
+</body>
+
+</html>
