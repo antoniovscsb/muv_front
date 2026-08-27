@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUV - Publicar anúncio</title>
+
+    <link rel="stylesheet" href="css/publicar_anuncio.css">
+    <link rel="stylesheet" href="/Projeto_MUV/cabecalho_muv/css/cabecalho.css">
+    <link rel="stylesheet" href="/Projeto_MUV/rodape_muv/css/rodape.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="cabecalho"></div>
+
+    <main class="publicar-container">
+
+        <section class="publicar-topo">
+            <div>
+                <span class="etiqueta">
+                    <i class="fa-solid fa-plus"></i>
+                    NOVO ANÚNCIO
+                </span>
+
+                <h1>Publicar anúncio</h1>
+
+                <p>
+                    Preencha as informações abaixo para publicar seu anúncio
+                    na comunidade MUV.
+                </p>
+            </div>
+
+            <a href="#" class="btn-voltar">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
+            </a>
+        </section>
+
+        <section class="etapas">
+            <div class="etapa ativa">
+                <span>1</span>
+                <p>Tipo de anúncio</p>
+            </div>
+
+            <div class="linha-etapa"></div>
+
+            <div class="etapa">
+                <span>2</span>
+                <p>Informações</p>
+            </div>
+
+            <div class="linha-etapa"></div>
+
+            <div class="etapa">
+                <span>3</span>
+                <p>Fotos</p>
+            </div>
+
+            <div class="linha-etapa"></div>
+
+            <div class="etapa">
+                <span>4</span>
+                <p>Publicar</p>
+            </div>
+        </section>
+
+        <form class="formulario-anuncio">
+
+            <section class="bloco-formulario">
+
+                <div class="bloco-titulo">
+                    <div class="icone-titulo">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div>
+                        <h2>Qual tipo de anúncio você deseja publicar?</h2>
+                        <p>
+                            Escolha a opção que melhor representa o que você
+                            deseja oferecer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tipos-anuncio">
+
+                    <label class="tipo-card troca">
+                        <input type="radio" name="tipo-anuncio" value="troca" checked>
+
+                        <div class="tipo-conteudo">
+                            <div class="tipo-icone">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+
+                            <div>
+                                <h3>Troca</h3>
+                                <p>Troque um produto por outro item de seu interesse.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="tipo-card permuta">
+                        <input type="radio" name="tipo-anuncio" value="permuta">
+
+                        <div class="tipo-conteudo">
+                            <div class="tipo-icone">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+
+                            <div>
+                                <h3>Permuta</h3>
+                                <p>Ofereça um serviço, talento ou habilidade para a comunidade.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="tipo-card doacao">
+                        <input type="radio" name="tipo-anuncio" value="doacao">
+
+                        <div class="tipo-conteudo">
+                            <div class="tipo-icone">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div>
+                                <h3>Doação</h3>
+                                <p>Doe gratuitamente algo que você não utiliza mais.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+            </section>
+
+            <section class="bloco-formulario">
+
+                <div class="bloco-titulo">
+                    <div class="icone-titulo">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                    </div>
+
+                    <div>
+                        <h2>Informações do anúncio</h2>
+                        <p>Conte para a comunidade o que você está oferecendo.</p>
+                    </div>
+                </div>
+
+                <div class="campos-grid">
+
+                    <div class="campo campo-grande">
+                        <label for="titulo">Título do anúncio</label>
+                        <input
+                            type="text"
+                            id="titulo"
+                            placeholder="Ex.: Bicicleta aro 29 em ótimo estado"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="categoria">Categoria</label>
+
+                        <select id="categoria">
+                            <option value="">Selecione uma categoria</option>
+                            <option>Eletrônicos</option>
+                            <option>Informática</option>
+                            <option>Casa e Reparos</option>
+                            <option>Esportes</option>
+                            <option>Games</option>
+                            <option>Educação</option>
+                            <option>Moda</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="valor">Valor estimado</label>
+
+                        <div class="input-prefixo">
+                            <span>R$</span>
+                            <input type="number" id="valor" placeholder="0,00">
+                        </div>
+                    </div>
+
+                    <div class="campo campo-grande">
+                        <label for="descricao">Descrição</label>
+
+                        <textarea
+                            id="descricao"
+                            maxlength="500"
+                            placeholder="Descreva o item ou serviço, informe suas características e tudo o que considerar importante."
+                        ></textarea>
+
+                        <small>Máximo de 500 caracteres</small>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bloco-formulario">
+
+                <div class="bloco-titulo">
+                    <div class="icone-titulo">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <div>
+                        <h2>Detalhes do anúncio</h2>
+                        <p>Complete as informações para facilitar o contato com outros usuários.</p>
+                    </div>
+                </div>
+
+                <div class="campos-grid">
+
+                    <div class="campo campo-grande">
+                        <label for="preferencia">O que você procura ou aceita em troca?</label>
+
+                        <input
+                            type="text"
+                            id="preferencia"
+                            placeholder="Ex.: celular, notebook, outro serviço ou propostas"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="estado">Estado do item</label>
+
+                        <select id="estado">
+                            <option>Selecione</option>
+                            <option>Novo</option>
+                            <option>Excelente estado</option>
+                            <option>Bom estado</option>
+                            <option>Estado regular</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" value="Belém, PA">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bloco-formulario">
+
+                <div class="bloco-titulo">
+                    <div class="icone-titulo">
+                        <i class="fa-regular fa-images"></i>
+                    </div>
+
+                    <div>
+                        <h2>Fotos do anúncio</h2>
+                        <p>Adicione imagens claras para deixar seu anúncio mais atrativo.</p>
+                    </div>
+                </div>
+
+                <div class="upload-area">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <h3>Adicione fotos do seu anúncio</h3>
+
+                    <p>
+                        Arraste as imagens para esta área ou clique
+                        para selecionar os arquivos.
+                    </p>
+
+                    <label class="btn-foto">
+                        <i class="fa-regular fa-image"></i>
+                        Selecionar imagens
+
+                        <input type="file" accept="image/*" multiple>
+                    </label>
+
+                    <small>JPG, PNG ou WEBP • até 5 imagens</small>
+                </div>
+
+                <div class="preview-fotos">
+
+                    <div class="foto-vazia">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Foto principal</span>
+                    </div>
+
+                    <div class="foto-vazia">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="foto-vazia">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="foto-vazia">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="foto-vazia">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="aviso-seguranca">
+
+                <div class="seguranca-icone">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <h3>Publique com segurança</h3>
+
+                    <p>
+                        Não compartilhe dados pessoais sensíveis no anúncio.
+                        Utilize o chat do MUV para combinar detalhes com outros usuários.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="acoes-formulario">
+
+                <button type="button" class="btn-cancelar">
+                    Cancelar
+                </button>
+
+                <button type="button" class="btn-rascunho">
+                    <i class="fa-regular fa-floppy-disk"></i>
+                    Salvar rascunho
+                </button>
+
+                <button type="submit" class="btn-publicar-anuncio">
+                    <i class="fa-solid fa-check"></i>
+                    Publicar anúncio
+                </button>
+
+            </section>
+
+        </form>
+
+    </main>
+
+    <div id="rodape"></div>
+
+    <script src="/Projeto_MUV/cabecalho_muv/js/cabecalho.js"></script>
+    <script src="/Projeto_MUV/rodape_muv/js/rodape.js"></script>
+
+</body>
+</html>

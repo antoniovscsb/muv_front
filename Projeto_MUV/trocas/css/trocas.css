@@ -320,9 +320,9 @@ nav i {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    background-color: var(--cor-secundaria-1);
+    background-color: var(--verde);
     color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
+    border: 2px solid var(--verde);
     cursor: pointer;
     transition: transform var(--tempo) ease, box-shadow var(--tempo) ease, background-color var(--tempo) ease;
 }
@@ -359,7 +359,7 @@ nav i {
 }
 
 /* COMO FUNCIONA E AVISO */
-.como-funciona-permutas {
+.como-funciona-trocas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,7 +369,7 @@ nav i {
     text-align: center;
 }
 
-.como-funciona-permutas-info {
+.como-funciona-trocas-info {
     display: flex;
     justify-content: space-evenly;
     padding: 0 8%;
@@ -377,7 +377,7 @@ nav i {
     width: 100%;
 }
 
-.como-funciona-permutas-items {
+.como-funciona-trocas-items {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,12 +387,12 @@ nav i {
     max-width: 300px;
 }
 
-.como-funciona-permutas-items i {
+.como-funciona-trocas-items i {
     color: var(--cor-secundaria-1);
     font-size: 32px;
 }
 
-.aviso-permuta {
+.aviso-troca {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,20 +403,20 @@ nav i {
     text-align: center;
 }
 
-.button-aviso-permuta {
+.button-aviso-troca {
     padding: 14px 24px;
     border-radius: var(--raio-borda);
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    background-color: var(--cor-secundaria-1);
+    background-color: var(--verde);
     color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
+    border: 2px solid var(--verde);
     cursor: pointer;
     transition: transform var(--tempo) ease, box-shadow var(--tempo) ease;
 }
 
-.button-aviso-permuta:hover {
+.button-aviso-troca:hover {
     transform: translateY(var(--deslocamento)) scale(1.01);
     box-shadow: var(--sombra);
 }
@@ -602,7 +602,7 @@ nav i {
         padding: 10px 0;
     }
 
-    .como-funciona-permutas-info {
+    .como-funciona-trocas-info {
         flex-direction: column;
         gap: 20px;
     }
@@ -618,14 +618,14 @@ nav i {
 .card:hover .card-img img{transform:scale(1.035)}
 .card-peito{flex:1;padding:18px}
 .card-peito p i{width:18px;color:var(--cor-principal)}
-.card-button:hover,.button-aviso-permuta:hover{background:var(--laranja-escuro);border-color:var(--laranja-escuro)}
-.como-funciona-permutas>h2{font-size:30px}
-.como-funciona-permutas-items i{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#f0e7ff;color:var(--cor-principal);transition:var(--transicao)}
-.como-funciona-permutas-items:hover i{transform:translateY(-4px);background:#e7d7ff}
-.aviso-permuta h1{font-size:32px}
-.aviso-permuta p{max-width:760px;line-height:1.5}
+.card-button:hover,.button-aviso-troca:hover{background:var(--laranja-escuro);border-color:var(--laranja-escuro)}
+.como-funciona-trocas>h2{font-size:30px}
+.como-funciona-trocas-items i{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#f0e7ff;color:var(--cor-principal);transition:var(--transicao)}
+.como-funciona-trocas-items:hover i{transform:translateY(-4px);background:#e7d7ff}
+.aviso-troca h1{font-size:32px}
+.aviso-troca p{max-width:760px;line-height:1.5}
 @media(max-width:1024px){.conteudo{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.conteudo{grid-template-columns:1fr;padding-left:5%;padding-right:5%}.como-funciona-permutas-info{flex-direction:column;align-items:center}.como-funciona-permutas>h2{font-size:24px}}
+@media(max-width:768px){.conteudo{grid-template-columns:1fr;padding-left:5%;padding-right:5%}.como-funciona-trocas-info{flex-direction:column;align-items:center}.como-funciona-trocas>h2{font-size:24px}}
 
 
 /* ==================================================
@@ -669,5 +669,75 @@ nav i {
 
     .card-img {
         height: 240px;
+    }
+}
+
+
+/* ==================================================
+   AJUSTES ESPECÍFICOS - PÁGINA DE TROCAS
+================================================== */
+
+.botao-categorias.ativo {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+.botao-categorias.ativo p {
+    color: var(--branco);
+}
+
+.card-peito p .fa-repeat {
+    color: var(--verde);
+}
+
+.card-button {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+.card-button:hover {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+}
+
+.como-funciona-trocas-items i {
+    background-color: #e9f8ef;
+    color: var(--verde-escuro);
+}
+
+.como-funciona-trocas-items:hover i {
+    background-color: #d8f1e2;
+}
+
+.aviso-troca {
+    background: linear-gradient(120deg, #39B66D, #087A3D);
+}
+
+.button-aviso-troca {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+}
+
+.button-aviso-troca:hover {
+    background-color: var(--laranja-escuro);
+    border-color: var(--laranja-escuro);
+}
+
+/* Mantém a mesma organização das páginas:
+   8 anúncios = 4 colunas x 2 linhas */
+
+.conteudo {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        grid-template-columns: 1fr;
     }
 }

@@ -6,7 +6,7 @@ rodape.innerHTML =`
     <footer class="rodape">
         <article class="rodape-1">
             <div class="rodape-1-part1">
-                <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="Logo MUV Rodapé">
+                <img src="/Projeto_MUV/home/img/logoMUV2.0.png" alt="Logo MUV Rodapé">
                 <p>MUV é a sua plataforma brasileira favorita para trocas, permutas e doações. Conectando pessoas e incentivando o consumo consciente em todo o país.</p>
                 <div class="rodape-icones">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>

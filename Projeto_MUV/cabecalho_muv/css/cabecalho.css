@@ -77,6 +77,7 @@ header {
 
 .btn-publicar {
     background-color: var(--cor-secundaria-1, #F59E0B);
+    text-decoration: none;
     border: none;
     padding: 12px 22px;
     border-radius: 25px;

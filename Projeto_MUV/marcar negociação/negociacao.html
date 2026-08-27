@@ -1,11 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcar encontro</title>
+
+    <title>MUV - Registrar troca</title>
+
+    <link rel="stylesheet" href="/Projeto_MUV/marcar negociação/css/marcar_n.css">
+    <link rel="stylesheet" href="/Projeto_MUV/cabecalho_muv/css/cabecalho.css">
+    <link rel="stylesheet" href="/Projeto_MUV/pesquisa_muv/css/pesquisa_muv.css">
+    <link rel="stylesheet" href="/Projeto_MUV/rodape_muv/css/rodape.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- CABEÇALHO -->
+    <div id="cabecalho"></div>
+
+
+    <!-- PESQUISA -->
+    <div id="pesquisa"></div>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="container">
+
+        <section class="titulo-pagina">
+
+            <div>
+                <h1>Registrar negociação</h1>
+
+                <p>
+                    Combine um local seguro e confirme os detalhes
+                    para concluir sua negociação.
+                </p>
+            </div>
+
+            <a href="/Projeto_MUV/chat/chat.html" class="btn-voltar">
+
+                <i class="fa-regular fa-circle-left"></i>
+
+                Voltar para o chat
+
+            </a>
+
+        </section>
+
+
+        <section class="negociacao-layout">
+
+
+            <!-- =========================
+                 CARD ESQUERDO
+            ========================== -->
+
+            <aside class="painel negociacao">
+
+                <p class="codigo">
+                    Negociação #01
+                </p>
+
+                <span class="status">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Agendado
+                </span>
+
+                <hr>
+
+                <div class="tipo">
+
+                    <strong>Tipo de negociação:</strong>
+
+                    <span>Troca</span>
+
+                </div>
+
+                <hr>
+
+
+                <div class="usuario">
+
+                    <i class="fa-regular fa-circle-user"></i>
+
+                    <div>
+                        <strong>Você</strong>
+                        <small>(Antonio)</small>
+                        <a href="#">Oferece</a>
+                    </div>
+
+                </div>
+
+
+                <div class="produto">
+
+                    <img
+                        src="/Projeto_MUV/marcar negociação/img/notebook.jpg"
+                        alt="Notebook Macbook Air"
+                    >
+
+                    <strong>
+                        Notebook<br>
+                        Macbook Air
+                    </strong>
+
+                </div>
+
+
+                <div class="separador-troca">
+
+                    <span></span>
+
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="usuario">
+
+                    <i class="fa-regular fa-circle-user"></i>
+
+                    <div>
+                        <strong>Victor</strong>
+                        <a href="#">Oferece</a>
+                    </div>
+
+                </div>
+
+
+                <div class="produto">
+
+                    <img
+                        src="img/bicicleta.webp"
+                        alt="Bicicleta fibra de carbono"
+                    >
+
+                    <strong>
+                        Bicicleta<br>
+                        Fibra de carbono
+                    </strong>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="conversas">
+
+                    <span>
+                        Conversas
+                    </span>
+
+                    <a href="/Projeto_MUV/chat/chat.html">
+                        ver mensagens
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <!-- =========================
+                 CENTRO
+            ========================== -->
+
+            <section class="centro">
+
+
+                <!-- DETALHES -->
+
+                <article class="painel detalhes">
+
+                    <h2>
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Detalhes do encontro
+
+                    </h2>
+
+
+                    <div class="detalhes-grid">
+
+
+                        <div class="detalhe">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <strong>
+                                    Local do encontro
+                                </strong>
+
+                                <h3>
+                                    Shopping Boulevard<br>
+                                    Entrada Principal
+                                </h3>
+
+                                <p>
+                                    Av. Visc. de Souza Franco, 776 -<br>
+                                    Reduto, Belém - PA, 66053-000
+                                </p>
+
+                                <a href="#">
+                                    Ver no mapa
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="detalhe detalhe-data">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <div>
+
+                                <strong>
+                                    Data
+                                </strong>
+
+                                <h3>
+                                    18 de agosto de 2026
+                                </h3>
+
+                                <p>
+                                    Terça-feira
+                                </p>
+
+                                <button>
+                                    Alterar data
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="participantes">
+
+                            <strong class="participantes-titulo">
+
+                                <i class="fa-solid fa-user-group"></i>
+
+                                Participantes
+
+                            </strong>
+
+
+                            <div class="participante">
+
+                                <div>
+                                    <b>Antonio</b>
+                                    <small class="voce">Você</small>
+                                </div>
+
+                                <i class="fa-regular fa-circle-user"></i>
+
+                            </div>
+
+
+                            <div class="participante">
+
+                                <div>
+                                    <b>Victor</b>
+                                    <small>Outra parte</small>
+                                </div>
+
+                                <i class="fa-regular fa-circle-user"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAPA -->
+
+                <div class="mapa">
+
+    <iframe
+        src="https://www.google.com/maps?q=Shopping+Boulevard+Belem+PA&output=embed"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa do Shopping Boulevard Belém">
+    </iframe>
+
+</div>
+
+            </section>
+
+
+            <!-- =========================
+                 PASSOS
+            ========================== -->
+
+            <aside class="painel passos">
+
+                <p class="passos-titulo">
+                    Próximos passos
+                </p>
+
+
+                <div class="passo ativo">
+
+                    <span class="circulo"></span>
+
+                    <div>
+
+                        <strong>
+                            Encontro marcado
+                        </strong>
+
+                        <p>
+                            ambas as partes confirmaram
+                            data, horário e local
+                        </p>
+
+                        <small>
+                            18/08/2026 às 14:30
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="linha"></div>
+
+
+                <div class="passo">
+
+                    <span class="circulo"></span>
+
+                    <div>
+
+                        <strong>
+                            Encontro realizado
+                        </strong>
+
+                        <p>
+                            após o encontro confirme
+                            que tudo ocorreu bem
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="linha"></div>
+
+
+                <div class="passo">
+
+                    <span class="circulo"></span>
+
+                    <div>
+
+                        <strong>
+                            Negociação concluída
+                        </strong>
+
+                        <p>
+                            Avalie sua experiência
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- =========================
+             CONFIRMAÇÃO
+        ========================== -->
+
+        <section class="confirmacao">
+
+            <div class="confirmacao-texto">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <div>
+
+                    <h2>
+                        Tudo combinado ?
+                    </h2>
+
+                    <p>
+                        Confirme que o encontro está agendado
+                        com a outra parte
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="confirmacao-botoes">
+
+                <button class="cancelar">
+
+                    <i class="fa-regular fa-circle-xmark"></i>
+
+                    Cancelar encontro
+
+                </button>
+
+
+                <button class="confirmar">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Confirmar encontro
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <div id="rodape"></div>
+
+
+    <script src="/Projeto_MUV/cabecalho_muv/js/cabecalho.js"></script>
+    <script src="/Projeto_MUV/pesquisa_muv/js/pesquisa_muv.js"></script>
+    <script src="/Projeto_MUV/rodape_muv/js/rodape.js"></script>
+
 </body>
 </html>
