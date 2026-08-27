@@ -621,7 +621,7 @@ nav i {
 .card-button:hover,.button-aviso-permuta:hover{background:var(--laranja-escuro);border-color:var(--laranja-escuro)}
 .como-funciona-permutas>h2{font-size:30px}
 .como-funciona-permutas-items i{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#fdf9ef;;transition:var(--transicao)}
-.como-funciona-permutas-items:hover i{transform:translateY(-4px);background:#e7d7ff}
+.como-funciona-permutas-items:hover i{transform:translateY(-4px);background:#fdfbf5}
 .aviso-permuta h1{font-size:32px}
 .aviso-permuta p{max-width:760px;line-height:1.5}
 @media(max-width:1024px){.conteudo{grid-template-columns:repeat(2,1fr)}}
