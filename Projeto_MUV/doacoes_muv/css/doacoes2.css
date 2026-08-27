@@ -192,7 +192,7 @@ nav i {
 }
 
 .banner img {
-    width: 90%;
+    width: 70%;
     border-radius: var(--raio-borda);
 }
 
@@ -320,9 +320,9 @@ nav i {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    background-color: var(--cor-secundaria-1);
+    background-color: #2c81f4;
     color: #ffffff;
-    border: 2px solid var(--cor-secundaria-1);
+    border: 2px solid #2c81f4;
     cursor: pointer;
     transition: transform var(--tempo) ease, box-shadow var(--tempo) ease, background-color var(--tempo) ease;
 }
@@ -388,7 +388,7 @@ nav i {
 }
 
 .como-funciona-doacoes-items i {
-    color: var(--cor-secundaria-1);
+    color: #2c81f4;
     font-size: 32px;
 }
 
