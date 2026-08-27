@@ -1,195 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta  name="description"  content="Troque Aqui! - Plataforma para trocar, doar e compartilhar conhecimento.">
-
-    <title>MUV</title>
-
-    <link
-        rel="stylesheet"
-        href="/Projeto_MUV/sobre_muv/CSS/sobre.css"
-    >
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
+    <title>MUV - Conversas</title>
+    <link rel="stylesheet" href="/Projeto_MUV/chat_muv/CSS/chat.css">
+    <!-- Ícones FontAwesome para o menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+    <!-- Header / Barra Superior -->
+   <div id="cabecalho"></div>
 
-   
- <header>
-
-        <div class="topo">
-
-            <img src="/Projeto_MUV/home/img/muv_logo.png" alt="Logo MUV" class="logo">
-
-            <div class="acoes">
-                <span><i class="fa-regular fa-circle-user"></i></span>
-                <span><i class="fa-regular fa-message"></i></span>
-                <span><i class="fa-regular fa-bell"></i></span>
-                
+    <!-- Conteúdo Principal -->
+    <main class="main-container">
+        
+        <!-- Barra Lateral: Conversas -->
+        <aside class="sidebar">
+            <h2>Conversas</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Busca do chat...">
             </div>
-            
-        </div>
-        <div class="acoes button">
-        <!-- MENU -->
-          <nav>
-            <a href="#"><i class="fa-solid fa-house"></i> Início</a>
-            <a href="#"><i class="fa-solid fa-layer-group"></i> Categorias</a>
-            <a href="#"><i class="fa-solid fa-mountain-city"></i> Meus anúncios</a>
-            <a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a>
-            <a href="#"><i class="fa-solid fa-hand-holding-hand"></i> Permutas</a>
-            <a href="#"><i class="fa-solid fa-hand-holding-heart"></i> Doações</a>
-            <a href="#"><i class="fa-solid fa-info"></i> Sobre</a>
-            <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>  
-            
-        </nav>
-        <button> + Publicar anúncio</button>
-    
-     </div>      
+            <div class="chat-list">
+                <div class="chat-item active">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div class="chat-info">
+                        <span class="status online">on-line</span>
+                        <h4>Atonino</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div class="chat-info">
+                        <h4>Salete</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div class="chat-info">
+                        <span class="status online">on-line</span>
+                        <h4>João</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div class="chat-info">
+                        <h4>Adréia</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
-    </header>
-    
-    <!-- PESQUISA -->
-    <section class="pesquisa">
-
-        <input
-            type="text"
-            placeholder="Buscar produtos ou serviços..."
-        >
-
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-
-    </section>
-  
-
-    <main class="chat">
-
-        <section class="contatos">
-
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <i class="fa-regular fa-gem"></i>
-
-                    <span class="card-tag">
-                        Nosso diferencial
-                    </span>
-
-                    <p>
-                        Conectamos pessoas para facilitar
-                        trocas e doações de produtos,
-                        incentivando o consumo consciente
-                        e sustentável.
-                    </p>
-
-                </article>
-
-
+        <!-- Área do Chat -->
+        <section class="chat-area">
+            <!-- Cabeçalho do Chat Atual -->
+            <div class="chat-header-user">
+                <div class="user-profile-bar">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div>
+                        <h3>Atonino</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="product-banner">
+                    <img src="https://via.placeholder.com/30" alt="Livro">
+                    <p>Livros didáticos, para doação.</p>
+                </div>
             </div>
 
+            <!-- Mensagens -->
+            <div class="messages-container">
+                <div class="message sent">
+                    <p>Olá, vc ainda tem os livros para doar?</p>
+                </div>
+                <div class="message received">
+                    <p>Sim, Doei alguns, mas ainda tenho um de C++ e outro de Font-end.</p>
+                </div>
+                <div class="message sent">
+                    <p>Que bom, como faço para pegar? livro estão muito caros.</p>
+                </div>
+                <div class="message received">
+                    <p>Vou levar no parque shoping é mais seguro para nós.</p>
+                </div>
+            </div>
+
+            <!-- Input de Envio -->
+            <div class="chat-input-area">
+                <input type="text" placeholder="Escreva sua mensagem aqui...">
+                <button><i class="fa-solid fa-play"></i></button>
+            </div>
         </section>
-
-
-        <section class="conversas">
-
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <i class="fa-regular fa-gem"></i>
-
-                    <span class="card-tag">
-                        Nosso diferencial
-                    </span>
-
-                    <p>
-                        Conectamos pessoas para facilitar
-                        trocas e doações de produtos,
-                        incentivando o consumo consciente
-                        e sustentável.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
 
     </main>
 
-   
-   
-    <footer class="rodape">
-
-        <article class="rodape-1">
-
-            <div class="rodape-1-part1">
-
-                <img src="/Projeto_MUV/doacoes_muv/img/logo_br.png" alt="logo">
-                <p>MUV é a sua plataforma brasileira favorita para trocas, permutas e doações. Conectando pessoas e incentivando o consumo consciente em todo o país.</p>
-                <div class="rodape-icones">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="rodape-1-part2">
-
-                <div class="rodape-1-part2-paragrafo">
-                    <span><strong>Plataforma</strong></span><br>
-                    <a href="#">Trocas</a><br>
-                    <a href="/Projeto_MUV/permuta/permuta_muv.html">Permutas</a><br>
-                    <a href="/Projeto_MUV/doacoes_muv/html/doacoes.html">Doações</a><br>
-                    <a href="#">Como funciona</a>
-                </div>  
-
-                <div class="rodape-1-part2-paragrafo">
-                    <span><strong>Suporte</strong></span><br>
-                    <a href="#">Central de Ajuda</a><br>
-                    <a href="#">Segurança<a><br>
-                    <a href="#">Termos de uso</a><br>
-                    <a href="#">Privacidade</a>
-                </div>
-                
-                <div class="rodape-1-part2-paragrafo">
-                    <span><strong>Fale Conosco</strong></span><br>
-                    <p>suporte@muv.com.br</p>
-                    <p>Belém, Brasil</p>
-
-                </div>                
-            </div>
-
-        </article>
-
-        <article class="rodape-2">
-    
-            <div class="rodape-2-part1">
-                <p>© 2026 MUV Brasil. Todos os direitos reservados.</p>
-            </div>
-
-        </article>
-
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>2026 A Gosto Gourmet. Todos os direitos</p>
+        <div class="footer-links">
+            <a href="#">Início</a>
+            <a href="#">Categorias</a>
+            <a href="#">Meus anúncios</a>
+            <a href="#">Trocas</a>
+            <a href="#">Doações</a>
+        </div>
     </footer>
-
-
+   <script src="/Projeto_MUV/cabecalho_muv/js/cabecalho.js"></script>
 </body>
-
 </html>
